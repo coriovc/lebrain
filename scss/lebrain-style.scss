@@ -1,0 +1,59 @@
+/* *********************************************
+
+/* Import Fonts & All CSS */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;500;600;700;800&display=swap');
+@import 'bootstrap.min.css';
+@import 'animate.css';
+@import 'classy-nav.css';
+@import 'owl.carousel.min.css';
+@import 'font-awesome.min.css';
+@import 'style.css';
+@import 'more.css';
+@import 'slider.css';
+
+// **************
+// Utilities
+// **************
+@import "utilities/fonts";
+@import "utilities/variables";
+@import "utilities/responsive";
+@import "utilities/color";
+
+// *************
+// Mixins
+// *************
+
+@import "mixins/flex";
+@import "mixins/miscellaneous";
+
+// **************
+// Stylesheet
+// *************
+@import "reboot";
+@import "spacing";
+@import "preloader";
+@import "backtotop";
+@import "buttons";
+
+@import "companies";
+@import "about";
+@import "team";
+@import "group";
+@import "services";
+@import "locations";
+@import "contact";
+@import "landing";
+@import "legal";
+
+@import "footer";
+@import "others";
+
+
+@import "heading";
+@import "header";
+@import "hero";
+@import "portfolio";
+@import "testimonial";
+@import "newsletter";
+@import "blog";
+
