@@ -20,6 +20,10 @@
 }
 
 
+
+
+
+
 .iframe-video{
   height: 370px;
   width: 660px;
@@ -65,41 +69,7 @@
     z-index: 0;
     position: absolute;
 }
-.site-section-cover {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    padding: 1rem 0;
-    background-size: cover;
-    background-position: center center;
-}
-.site-section-cover, .site-section-cover .container {
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-.site-section-cover, .site-section-cover .container>.row {
-    height: calc(100vh - 100px);
-    min-height: 477px;
-}
-@media only screen and (max-width:767px) {
-    .site-section-cover, .site-section-cover .container>.row {
-    height: calc(100vh - 196px);
-    min-height: 450px;
-}
-}.site-section-cover.overlay {
-    position: relative;
-}
-.site-section-cover.overlay:before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #00F6A1;
-    z-index: 1;
-}
+
 .site-section-cover.the-group {
     background-image: url(../img/bg-img/img-b-2.jpg);
 }

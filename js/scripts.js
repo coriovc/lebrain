@@ -9,6 +9,7 @@ const app = (() => {
     body = document.querySelector('body');
     menu = document.querySelector('.menu-icon');
     lettermenu = document.querySelector('.menu-leter');
+    lettermenuclo = document.querySelector('.menu-leter-close');
     menuItems = document.querySelectorAll('.nav__list-item');
 
     applyListeners();
@@ -17,6 +18,7 @@ const app = (() => {
   const applyListeners = () => {
     menu.addEventListener('click', () => toggleClass(body, 'nav-active'));
     lettermenu.addEventListener('click', () => toggleClass(body, 'nav-active'));
+    lettermenuclo.addEventListener('click', () => toggleClass(body, 'nav-active'));
   };
 
   const toggleClass = (element, stringClass) => {
