@@ -13,9 +13,8 @@
         align-items: center;
 
         .row{
-
             height: calc(100vh - 100px);
-            min-height: 477px;
+            min-height: 650px;
 
             @media #{$breakpoint-xs} {
                 height: calc(100vh - 196px);
@@ -54,7 +53,7 @@
             margin: 30px 0;
             margin-top: 60px;
             color: $dark;
-            font-weight: 600;
+            font-weight: 700;
             line-height: 1; 
 
             @media #{$breakpoint-xs} {
@@ -82,13 +81,49 @@
         }
 
         .highlighted__line {
-            height: 25%;
+            height: 22%;
             left: -2%;
             position: absolute;
-            top: 32%;
+            top: 27%;
             user-select: none;
-            width: 36%;
+            width: 38%;
             z-index: -1;
+        }
+
+        .a-link{
+                display:inline-flex;
+
+                span{
+                    position: absolute;
+                    transition: all 0.3s ease;
+                }
+                a{
+                    margin-top:1rem;
+                }
+                h2 {
+                    position: relative;
+                    z-index: 1;
+                    font-size: 16px;
+                    color: $dark;
+                    font-weight: normal;
+                    text-decoration: none;
+                    width: 100%;
+                    margin: 0;
+                    position: relative;
+                    display: inline-block;
+                    margin-left: 1.5rem;
+
+                    @media #{$breakpoint-xs} {
+                        width: auto;
+                    }
+                }
+        }
+        .a-link:hover{
+                display:inline-flex;
+
+                span{
+                    margin-top:10px;
+                }
         }
 }
 
@@ -103,16 +138,16 @@
 }
 
 .brain-animate{
-  -webkit-animation: mover 4s infinite  alternate;
-  animation: mover 4s infinite  alternate;
+  -webkit-animation: mover 2s infinite  alternate;
+  animation: mover 2s infinite  alternate;
 }
   @-webkit-keyframes mover {
         0% { transform: translateY(0); }
-        100% { transform: translateY(-10px); }
+        100% { transform: translateY(-8px); }
   }
   @keyframes mover {
         0% { transform: translateY(0); }
-        100% { transform: translateY(-10px); }
+        100% { transform: translateY(-8px); }
   }
 
 

@@ -97,9 +97,11 @@
     // **************************
     uza_window.on('scroll', function () {
         if (uza_window.scrollTop() > 0) {
-            $('.main-header-area').addClass('sticky');
+            $('.logo-h').addClass('menu-logo-active');
+            $('.logo-h-b').removeClass('logo-content-active');
         } else {
-            $('.main-header-area').removeClass('sticky');
+           $('.logo-h').removeClass('menu-logo-active');
+           $('.logo-h-b').addClass('logo-content-active');
         }
     });
 
@@ -117,7 +119,9 @@
     // :: 16.0 Prevent Default 'a' Click
     // *********************************
     
-
+    $('.more-p').on('click', function () {
+        $('.proyect-hidden').addClass('proyect-visible');
+    })
 
     // *********************************
     // :: More
@@ -144,37 +148,14 @@
     $(function(){
         $(document).scroll(function(){
             if($(this).scrollTop() > 1) {
-                $('#logo').attr('src','img/logo-color.svg')
+                $('#logo-h').addClass('menu-logo-active');
             }
             if($(this).scrollTop() < 1) {        
-             $('#logo').attr('src','img/logo-white.svg');   
+             $('#logo-h').removeClass('menu-logo-active');   
             }
         });
         });
 
-    $(function(){
 
-        $(".has-megamenu").hover(
-                function () {
-                    $(".main-header-area").addClass("sticky-menu");
-                    $('#logo').attr('src','img/logo-color.svg');
-                }, 
-                function () {
-                    $(".main-header-area").removeClass("sticky-menu");
-                    $('#logo').attr('src','img/logo-color.svg');
-                });
-
-
-         $(".active-a").hover(function() {
-           $(".meg-a").toggleClass("mega-item").siblings().removeClass("mega-item");
-        });
-
-         $(".has-megamenu").hover(function() {
-           $("#drop").toggleClass("arrow_carrot-up").siblings().removeClass("arrow_carrot-down");
-           $("#drop").toggleClass("arrow_carrot-down").siblings().removeClass("arrow_carrot-up");
-        });
-         
-
-     });
 
 })(jQuery);

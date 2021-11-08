@@ -23,7 +23,6 @@ details, main, summary {
 }
 
 input[type=number] {
-  width: auto;
 }
 
 input[type=search], input[type=text], input[type=email] {

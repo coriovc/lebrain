@@ -6,17 +6,17 @@
     line-height: 35px;
     right: 40px;
     width: 40px;
-    background-color: $secondary;
-    color: $white;
+    background-color: $primary;
+    color: $dark;
     text-align: center;
     height: 40px;
-    @include transition-duration(500ms);
+    transition: all 0.3s ease;
     border-radius: 50%;
     @include box-shadow($box-shadow);
 
     &:hover {
         background-color: $dark;
-        color: $white;
+        color: $primary;
     }
 
     @media #{$breakpoint-xs} {
