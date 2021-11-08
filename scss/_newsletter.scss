@@ -474,6 +474,12 @@
         text-align: center;
         z-index: 200;
 
+        &.cli-4{
+            img{
+                transform: rotate(45deg);
+            }
+        }
+
         img{
             cursor: pointer;
             border-radius: 25rem;
