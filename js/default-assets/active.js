@@ -118,10 +118,36 @@
     // *********************************
     // :: 16.0 Prevent Default 'a' Click
     // *********************************
-    
-    $('.more-p').on('click', function () {
+
+    $('.cli').on('click', function () {
         $('.proyect-hidden').addClass('proyect-visible');
-    })
+    });
+    $('.cli-1').on('click', function () {
+        $('.proyect-hidden-1').addClass('proyect-visible');
+    });
+    $('.cli-2').on('click', function () {
+        $('.proyect-hidden-2').addClass('proyect-visible');
+    });
+    $('.cli-3').on('click', function () {
+        $('.proyect-hidden-3').addClass('proyect-visible');
+    });
+
+    $('.cli').on('click', function () {
+        $('.cli-1').addClass('cli-block');
+        $('.cli').addClass('cli-hidden');
+    });
+    $('.cli-1').on('click', function () {
+        $('.cli-2').addClass('cli-block');
+        $('.cli-1').addClass('cli-hidden');
+    });
+    $('.cli-2').on('click', function () {
+        $('.cli-3').addClass('cli-block');
+        $('.cli-1').addClass('cli-hidden');
+    });
+    
+
+
+    
 
     // *********************************
     // :: More

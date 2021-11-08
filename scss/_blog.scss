@@ -31,35 +31,6 @@
 }
 
 
-.nl-content {
-        position: relative;
-        z-index: 1;
-
-        h2 {
-            font-size: 55px;
-            display: block;
-            font-weight: 400;
-            margin-bottom: 0;
-            color: $c-gray;
-
-            @media #{$breakpoint-xs} {
-                font-size: 35px;
-                line-height: 1;
-                margin-bottom: 1rem;
-            }
-        }
-
-        p {
-            margin-bottom: 0;
-            line-height: 1.5;            
-            margin-right: 8rem;
-            
-            @media #{$breakpoint-xs} {
-                font-size: 14px;
-                margin-right: 2rem;
-            }
-        }
-}
 
 .single-blog-post {
     position: relative;

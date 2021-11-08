@@ -43,6 +43,7 @@
             margin-bottom: 0;
             line-height: 1;
             font-size: 35px;
+            color: #121212;
 
             @media #{$breakpoint-xs} {
                 font-size: 16px;
@@ -434,6 +435,26 @@
             height: 0;
             transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
         }
+        .proyect-hidden-1{
+            opacity: 0;
+            height: 0;
+            transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+        }
+        .proyect-hidden-2{
+            opacity: 0;
+            height: 0;
+            transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+        }
+        .proyect-hidden-3{
+            opacity: 0;
+            height: 0;
+            transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+        }
+        .proyect-hidden-4{
+            opacity: 0;
+            height: 0;
+            transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+        }
 
         .proyect-visible{
             opacity: 1;
@@ -466,6 +487,18 @@
             bottom: -3.5rem;
             z-index: 10;
         }
+
+        &.cli-hidden{
+            display: none;
+        }
+
+        &.cli-block{
+            display: block;
+        }
+
+
+
+
     }
 
 
@@ -474,11 +507,53 @@
             background: none;
             overflow: hidden;
             border-radius: 0;
-            height: 570px;
+            width: 412px;
+            height: 525px;
+            margin-left: auto;
+            margin-right: auto;
+
+            img{
+                transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+                height: 100%;
+            }
 
             &:hover{
                 box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
                 border-radius: 10px;
+                transform: scale(1.05);
+
+                img{
+                    transform: scale(1.05);
+                }
             }
     }
+}
+
+.nl-content {
+        position: relative;
+        z-index: 1;
+
+        h2 {
+            font-size: 55px;
+            display: block;
+            font-weight: 400;
+            margin-bottom: 0;
+
+            @media #{$breakpoint-xs} {
+                font-size: 35px;
+                line-height: 1;
+                margin-bottom: 1rem;
+            }
+        }
+
+        p {
+            margin-bottom: 0;
+            line-height: 1.5;            
+            margin-right: 8rem;
+            
+            @media #{$breakpoint-xs} {
+                font-size: 14px;
+                margin-right: 2rem;
+            }
+        }
 }
