@@ -131,6 +131,9 @@
     $('.cli-3').on('click', function () {
         $('.proyect-hidden-3').addClass('proyect-visible');
     });
+    $('.cli-4').on('click', function () {
+        $('.proyect-hidden,.proyect-hidden-1,.proyect-hidden-2,.proyect-hidden-3').removeClass('proyect-visible');
+    });
 
     $('.cli').on('click', function () {
         $('.cli-1').addClass('cli-block');
@@ -143,6 +146,15 @@
     $('.cli-2').on('click', function () {
         $('.cli-3').addClass('cli-block');
         $('.cli-1').addClass('cli-hidden');
+    });
+    $('.cli-3').on('click', function () {
+        $('.cli-4').addClass('cli-block');
+        $('.cli-3').addClass('cli-hidden');
+    });
+
+    $('.cli-4').on('click', function () {
+        $('.cli').addClass('cli-block');
+        $('.cli-1,.cli-2,.cli-3,.cli-4').removeClass('cli-block');
     });
     
 
