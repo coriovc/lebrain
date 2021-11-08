@@ -4883,7 +4883,8 @@ body.nav-active .nav__list-item:nth-child(4) {
       border-radius: 25rem;
       transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1); }
       .sec-landing-area .more-p img:hover {
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); }
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        transform: scale(1.05); }
     @media only screen and (max-width: 767px) {
       .sec-landing-area .more-p {
         position: absolute;
