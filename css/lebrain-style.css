@@ -3561,6 +3561,8 @@ input:focus {
     @media only screen and (max-width: 767px) {
       .nav__list span {
         display: block; } }
+  .nav__list:hover span {
+    margin-left: -1rem; }
 
 .nav__list-item {
   position: relative;
