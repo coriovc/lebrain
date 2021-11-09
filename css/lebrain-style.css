@@ -3515,13 +3515,12 @@ input:focus {
     .nav__content {
       top: 40%; } }
   .nav__content .movil-menu {
-    transition-delay: 1s;
     opacity: 0;
     transform: translate(0%, 100%);
-    transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1); }
+    transition-delay: 0.8s !important;
+    transition: opacity 0.3s ease, transform 0.3s ease, color 0.3s ease; }
     @media only screen and (max-width: 767px) {
       .nav__content .movil-menu {
-        display: block;
         margin-top: 90%; } }
     .nav__content .movil-menu .line-menu-movil {
       margin-left: auto;
@@ -3647,9 +3646,13 @@ body.nav-active .nav__list-item {
   transition: opacity 0.3s ease, transform 0.3s ease, color 0.3s ease; }
 
 body.nav-active .movil-menu {
-  opacity: 1;
-  transform: translateX(0%);
-  transition: opacity 0.3s ease, transform 0.3s ease, color 0.3s ease; }
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(0%); }
+  @media only screen and (max-width: 767px) {
+    body.nav-active .movil-menu {
+      opacity: 1;
+      visibility: visible; } }
 
 body.nav-active .menu-leter-close {
   opacity: 1;
