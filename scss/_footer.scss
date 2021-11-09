@@ -4,14 +4,47 @@
     position: relative;
     z-index: 1;
     padding: 5rem 0;
-
+    
     @media #{$breakpoint-xs} {
         padding: 2rem 1rem;
-    }    
+    }  
+
+    .row{
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -ms-flex-align: center!important;
+        align-items: center!important;
+        
+        @media #{$breakpoint-xs} {
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -ms-flex-align: start!important;
+            align-items: flex-start!important;
+        }
+    }
+        
+    .movil{
+        text-align: left;
+
+        @media #{$breakpoint-xs} {
+            text-align: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+
+        }
+    }
 
     .logo-letter{
         margin-left: 1rem;
         width: 60%;
+        
+        @media #{$breakpoint-xs} {
+            margin-left: 0;
+            width: 40%;
+        }    
+
     }
     
 }
@@ -120,13 +153,11 @@
                     position: relative;
                     display: inline-block;
                     margin-left: 1.5rem;
-
-                    @media #{$breakpoint-lg} {
-                        font-size: 14px;
-                    }
+                    
 
                     @media #{$breakpoint-xs} {
                         width: auto;
+                        font-size: 19px;
                     }
                 }
 
@@ -168,6 +199,11 @@
                 a{
                     margin-right:2.5rem;
 
+                    @media #{$breakpoint-xs} {
+                        margin-right: 1rem;
+                        margin-left: 1rem;
+                    }                        
+
                     span{
                         color: #222221;
                         font-size: 30px;
@@ -189,6 +225,11 @@
                     color: $primary;
                     font-size: 35px;
 
+                    @media #{$breakpoint-xs} {
+                        font-size: 28px;
+                        margin-top: -0.5rem;
+                    }   
+
                     span{
                         position: absolute;
                         font-size: 73px;
@@ -196,7 +237,15 @@
                         margin-top: 2rem;
                         margin-left: -2rem;
                         transition: all 0.3s ease;
+                        @media #{$breakpoint-xs} {
+                            margin-top: 1rem;
+                            font-size: 50px;
+                            margin-left: -1rem;
+                        }
+                          
                     }
+
+                    
                 }
                 a:hover {
                     color:$dark;

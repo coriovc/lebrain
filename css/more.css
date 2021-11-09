@@ -507,14 +507,7 @@
     color: #04948A;
     margin-right: 1.5rem;
 }
-.d-none {
-    display: inline-block;
-}
-@media (min-width:1200px) {
-    .d-none {
-    display: none;
-}
-}@media only screen and (max-width:767px) {
+@media only screen and (max-width:767px) {
     #nav {
     padding-bottom: 0;
 }

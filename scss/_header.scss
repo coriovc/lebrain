@@ -867,6 +867,9 @@
         visibility:hidden;
         transition-delay: 1s;
         transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+        @media #{$breakpoint-xs} {
+            left: 1rem;          
+        }
     }
 
     .menu-logo-active{        
@@ -885,13 +888,25 @@
         visibility:hidden;
         transition-delay: 1s;
         transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-
+        
         h2{
             font-size: 14px;
         }
 
         .logo-head{
             width: 60%;
+        }
+
+        @media #{$breakpoint-xs} {
+            left: 1rem;
+            h2{
+                font-size: 12px;
+            }
+
+            .logo-head{
+                width: 55%;
+            }
+
         }
     }
 
@@ -908,6 +923,12 @@
       right: 50px;
       top: 30px;
       cursor: pointer;
+
+      @media #{$breakpoint-xs} {
+            right: 20px;
+            top: 60px;           
+        }
+
     }
     .menu-icon__line {
       height: 2px;
@@ -940,6 +961,11 @@
             font-size: 25px;
             color: #000;
         }
+
+        @media #{$breakpoint-xs} {
+            right: 65px;
+            top: 47px;           
+        }
     }
 
     .menu-leter-close{
@@ -960,6 +986,10 @@
             font-family: 'Nunito', sans-serif;
             font-size: 25px;
             color: #000;
+        }
+        @media #{$breakpoint-xs} {
+            right: 58px;
+            top: 43px;         
         }
     }
 
@@ -1005,12 +1035,20 @@
   transform: translate(0%, -50%);
   width: 100%;
   text-align: left;
+  @media #{$breakpoint-xs} {
+             top: 34%;       
+  }
 }
 .nav__list {
     position: relative;
     display: grid;
     float: right;
     margin-right: 3.1rem;
+    @media #{$breakpoint-xs} {
+        margin-left: 5rem;
+        float: left;
+        margin-right: 0;    
+  }
   }
 .nav__list-item {
   position: relative;
@@ -1021,6 +1059,10 @@
   transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
   margin-right: 40px;
   margin-top: 10px;
+  @media #{$breakpoint-xs} {
+        margin-right: 40px;
+  margin-top: 10px;           
+  }
 }
 .nav__list-item:before {
   content: "";
@@ -1039,7 +1081,10 @@
   color: #000;
   font-size: 16px;
   font-weight: 400;
-  
+    
+    @media #{$breakpoint-xs} {
+        font-size: 40px;     
+    }
   }
 
     

@@ -15,9 +15,10 @@
         position: relative;
         z-index: 1;
         text-align: left;
+        margin-left: 3rem;
 
         @media #{$breakpoint-xs} {
-
+            margin-left: 0;
         }
 
         a {
@@ -29,7 +30,7 @@
             transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);       
 
             @media #{$breakpoint-xs} {
-                font-size: 40px;
+                font-size: 58px;
             }
         }
 
@@ -46,10 +47,8 @@
             color: #121212;
 
             @media #{$breakpoint-xs} {
-                font-size: 16px;
-                margin-right: 0;
-                margin-top: 1rem;
-                line-height: 1.5;
+                font-size: 29px;
+                width: 90%;
             }
 
         }
@@ -108,18 +107,24 @@
 
     
     @media #{$breakpoint-xs} {
-        padding: 8rem 0 3rem 0;
+        padding: 2rem;
     }
 
     .container{
-        padding: 0;
+        padding: 0 3rem;
         .sec-1{
             padding: 0 2.5rem;
+        }
+        @media #{$breakpoint-xs} {
+        padding: 0 1rem;
         }
     }
 
     .card-flex{
         display: inline-flex;
+        @media #{$breakpoint-xs} {
+        display: block;
+        }
     }
 
     .card{
@@ -128,7 +133,10 @@
         transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 
         .card-body{
-            padding: 3rem;
+            padding: 2rem 0 2rem 3rem;
+            @media #{$breakpoint-xs} {
+                padding: 2rem 0 2rem 2rem;        
+            }
 
             h2{
                 font-weight: 300;
@@ -318,7 +326,7 @@
 
     
     @media #{$breakpoint-xs} {
-        padding: 5rem 0;
+        padding: 2rem 2rem;
     }
 
     .container{
@@ -331,10 +339,16 @@
 
         &.ma-le-6{
             margin-left: 6rem;
+            @media #{$breakpoint-xs} {
+                margin-left: 0;
+            }
         }
 
         &.a{
             margin-top: 15rem;
+            @media #{$breakpoint-xs} {
+                margin-top: 0;
+            }
         }
         
         h2 {
@@ -349,12 +363,14 @@
                 font-weight: 300;
                 margin-bottom: 8rem;
                 color: $dark;
+                @media #{$breakpoint-xs} {
+               margin-bottom: 2rem;
+                }
             }
 
             @media #{$breakpoint-xs} {
-                font-size: 23px;
+                font-size: 73px;
                 line-height: 1.2;
-                font-weight: 500;
             }
         }
 
@@ -363,6 +379,9 @@
             font-weight: 700;
             color: #121212;
             margin-left: 1.5rem;
+            @media #{$breakpoint-xs} {
+                margin-left: 0;
+            }
 
             span{
                 position: absolute;
@@ -385,6 +404,9 @@
               left: 0;
               transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
               z-index: -1;
+              @media #{$breakpoint-xs} {
+                height: 13px;
+              }
         }
 
         a:hover:before {              
@@ -406,10 +428,14 @@
 
             &.a{
                 font-size: 18px;
+                @media #{$breakpoint-xs} {
+                font-size: 17px;
+                margin-bottom: 4rem;
+                }
             }
 
             @media #{$breakpoint-xs} {
-                font-size: 14px;
+                font-size: 20px;
                 margin-right: 1rem;
             }
 
@@ -426,7 +452,7 @@
     background-color: #f5f5f5;
     
     @media #{$breakpoint-xs} {
-        padding: 5rem 0;
+        padding: 2rem 2rem;
     }
 
     .container{
@@ -493,9 +519,9 @@
         }
         
         @media #{$breakpoint-xs} {
-            position: absolute;
-            bottom: -3.5rem;
-            z-index: 10;
+            bottom: -2rem;
+            z-index: 2000;
+            width: 85%;
         }
 
         &.cli-hidden{
@@ -520,8 +546,12 @@
             width: 412px;
             height: 525px;
             margin-left: auto;
-            margin-right: auto;
-
+            margin-right: auto;    
+            @media #{$breakpoint-xs} {
+                margin-bottom: 2rem;
+                width: auto;
+                height: auto;   
+            }
             img{
                 transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
                 height: 100%;
