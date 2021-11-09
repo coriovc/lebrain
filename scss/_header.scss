@@ -1093,8 +1093,29 @@
         margin-left: 5rem;
         float: left;
         margin-right: 0;    
-  }
-  }
+    }
+
+    span{
+        position: absolute;
+        display: none;
+        font-size: 73px;
+        color: $primary;
+        margin-top: 2rem;
+        margin-left: -2rem;
+        transition: all 0.3s ease;
+        @media #{$breakpoint-xs} {
+        display: block;   
+        }
+
+
+    }
+
+    &:hover{
+        span{
+            margin-left: -1rem;
+        }
+    }
+ }
 .nav__list-item {
   position: relative;
   display: inline-block;
