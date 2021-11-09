@@ -30,7 +30,7 @@
             transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);       
 
             @media #{$breakpoint-xs} {
-                font-size: 58px;
+                font-size: 50px;
             }
         }
 
@@ -48,7 +48,7 @@
 
             @media #{$breakpoint-xs} {
                 font-size: 29px;
-                width: 90%;
+                width: 100%;
             }
 
         }
@@ -143,10 +143,17 @@
                 font-size: 26px;
                 margin-bottom: 1.5rem;
                 color: #121212;
+                @media #{$breakpoint-xs} {      
+                    font-size: 22px;
+                }
             }
             h3{
                 font-size: 16px;
                 font-weight: 400;
+
+                @media #{$breakpoint-xs} {      
+                    font-size: 14px;
+                }
 
                 span{
                     font-size:43px;
@@ -155,6 +162,9 @@
                     margin-top: 8px;
                     margin-left: -1rem;
                     transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+                    @media #{$breakpoint-xs} {      
+                        margin-top: 6px;
+                    }
                 }
             }
         }
@@ -369,7 +379,7 @@
             }
 
             @media #{$breakpoint-xs} {
-                font-size: 73px;
+                font-size: 65px;
                 line-height: 1.2;
             }
         }
@@ -429,13 +439,13 @@
             &.a{
                 font-size: 18px;
                 @media #{$breakpoint-xs} {
-                font-size: 17px;
-                margin-bottom: 4rem;
+                font-size: 15px;
+                margin-bottom: 5rem;
                 }
             }
 
             @media #{$breakpoint-xs} {
-                font-size: 20px;
+                font-size: 19px;
                 margin-right: 1rem;
             }
 

@@ -868,7 +868,8 @@
         transition-delay: 1s;
         transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
         @media #{$breakpoint-xs} {
-            left: 1rem;          
+            left: 1rem;
+            top: 39px;          
         }
     }
 
@@ -1038,6 +1039,50 @@
   @media #{$breakpoint-xs} {
              top: 34%;       
   }
+
+    .line-menu-movil{
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        display: none;
+
+        @media #{$breakpoint-xs} {
+            display: block;    
+        }
+    }
+
+    .our-link {
+        position: relative;
+        z-index: 1;
+
+        li {    
+
+            &.footer-icon{
+                display:inline-flex;
+
+                a{
+                    margin-right:2.5rem;
+
+                    @media #{$breakpoint-xs} {
+                        margin-right: 1rem;
+                        margin-left: 1rem;
+                    }                        
+
+                    span{
+                        color: #222221;
+                        font-size: 30px;
+                        transition: all 0.3s ease;
+                    }
+                }
+                a:hover {
+                    span{
+                        color: $primary;
+                    }
+                }
+
+            }
+        }
+    }
 }
 .nav__list {
     position: relative;
