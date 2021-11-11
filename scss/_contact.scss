@@ -33,17 +33,17 @@
 
             .highlighted__line {                
                 height: 5%;
-                left: 26.5%;
+                left: 31%;
                 position: absolute;
-                top: 19.5%;
+                top: 19%;
                 user-select: none;
-                width: 23%;
+                width: 18%;
                 z-index: -1;
 
                 @media #{$breakpoint-xs} {
                     height: 4.5%;
                     left: 8%;
-                    top: 23%;
+                    top: 22%;
                     width: 58%;
 
                 }
@@ -116,6 +116,7 @@
         .buttoms-contact{
             margin: 1rem 0 3rem 0;
             width: 70%;
+            height: 170px;
             
             @media #{$breakpoint-xs} {
                 width: 120%;

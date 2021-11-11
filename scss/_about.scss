@@ -7,7 +7,18 @@
     background-size: cover;
     background-position: center center;
 
+    @media #{$breakpoint-xs} {
+        background-size: inherit;
+        height: 94%;
+        background-position: center;
+    }
+
     .container{
+
+        @media #{$breakpoint-xs} {
+                padding: 2rem;
+        }
+
         .row{
             height: calc(100vh - 100px);
             min-height: 650px;
@@ -35,6 +46,23 @@
     }
 }
 
+
+.img-cloud{
+    display: none;
+
+    @media #{$breakpoint-xs} {
+        position: absolute;
+        display: block;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 169%;
+        max-width: 200%;
+        z-index: 0;       
+    }
+}
+
+
 .about-area {
     position: relative;
     z-index: 1;
@@ -47,7 +75,9 @@
         z-index: 1;        
 
         @media #{$breakpoint-xs} {
-                margin-top: 4rem;
+            margin-top: -5rem;
+            margin-left: 1rem;
+
         }
         
         h2 {
@@ -60,8 +90,8 @@
             line-height: 1; 
 
             @media #{$breakpoint-xs} {
-                font-size: 150px;
-                font-weight: 500;
+                font-size: 53px;
+                line-height: 1.2;
             }
             strong{
                 font-weight: 700;
@@ -93,6 +123,11 @@
             user-select: none;
             width: 56%;
             z-index: -1;
+
+            @media #{$breakpoint-xs} {
+                width: 82%;
+                left: -4%;
+            }
         }
 
         .a-link{
@@ -205,6 +240,7 @@
     padding: 4rem 0;
 
     @media #{$breakpoint-xs} {
+        padding: 1rem 2rem 2rem 2rem;
     }
 
     .l-content {
@@ -213,6 +249,7 @@
         width: 66%;
 
             @media #{$breakpoint-xs} {
+                width: 100%;
                 margin-bottom: 40px;            
             }
 
@@ -223,6 +260,8 @@
             color: $dark;        
 
             @media #{$breakpoint-xs} {
+                font-size: 37px;
+                font-weight: 600;
             }
         }
         h3 {
@@ -232,6 +271,7 @@
             color: $dark;        
 
             @media #{$breakpoint-xs} {
+                ont-size: 23px;
             }
         }
 
@@ -243,8 +283,9 @@
             margin-bottom: 1rem;
 
             @media #{$breakpoint-xs} {
-                font-size: 14px;
-                margin-right: 1rem;
+                font-size: 19px;
+                margin-right: 0rem;
+                margin-bottom: 2rem;
             }
 
         }
@@ -278,6 +319,7 @@
     background-color: #f5f5f5;
 
     @media #{$breakpoint-xs} {
+        padding: 2rem 1rem;
     }
 
     .l-content {
@@ -287,7 +329,9 @@
         margin-left: 8rem;
 
             @media #{$breakpoint-xs} {
-                margin-bottom: 40px;            
+                margin-bottom: 40px;
+                margin-left: 0;
+                width: 100%;        
             }
 
         h2 {
@@ -302,6 +346,8 @@
             }   
 
             @media #{$breakpoint-xs} {
+                font-size: 50px;
+                line-height: 1.1;
             }
 
             &:before {
@@ -315,9 +361,17 @@
               left: -6%;
               transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
               z-index: -1;
+            
+                @media #{$breakpoint-xs} {
+                    width: 106px;
+                    height: 30px;
+                    top: 8%;
+
+                }
+
             }
         }
-
+    
         h3 {
             font-size: 22px;
             font-weight: 300;
@@ -329,6 +383,8 @@
             }   
 
             @media #{$breakpoint-xs} {
+                    width: 85%;
+                    font-size: 20px;
             }
         }
 
