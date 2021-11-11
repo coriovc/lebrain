@@ -4,6 +4,14 @@
     position: relative;
     z-index: 0;
     padding: 16rem 3rem 1rem 3rem;
+
+    @media #{$breakpoint-xs} {
+        padding: 15rem 2rem 2rem 2rem;
+    }
+
+    @media #{$breakpoint-xs} {
+        padding: 15rem 2rem 2rem 2rem;
+    }
     
     .text-hero {
             width: 50%;
@@ -17,8 +25,8 @@
                 line-height: 1;   
 
                 @media #{$breakpoint-xs} {
-                    font-size: 40px;
-                    padding-top: 80px;
+                    font-size: 44px;
+                    padding-top: 50px;
                 }
 
                 &:before {
@@ -51,7 +59,8 @@
         width: 67%;
 
             @media #{$breakpoint-xs} {
-                margin-bottom: 40px;            
+                margin-bottom: 40px;
+                width: 100%;            
             }
 
         h3 {
@@ -61,6 +70,7 @@
             color: $dark;        
 
             @media #{$breakpoint-xs} {
+                font-size: 27px;
             }
 
         }
@@ -80,6 +90,7 @@
             color: $dark;        
 
             @media #{$breakpoint-xs} {
+                font-size: 27px;
             }
 
             &:before {
@@ -105,8 +116,8 @@
             margin-bottom: 1rem;
 
             @media #{$breakpoint-xs} {
-                font-size: 14px;
-                margin-right: 1rem;
+                font-size: 20px;
+    margin-right: 0;
             }
 
         }
@@ -184,6 +195,12 @@
             width: 370px;
             height: 475px;
 
+            @media #{$breakpoint-xs} {
+                margin: 1rem auto 1rem auto;
+                width: 300px;
+                height: 400px;
+            }
+
             img{
                 transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
             }
@@ -207,10 +224,17 @@
     position: relative;
     z-index: 0;
     padding: 16rem 3rem 1rem 3rem;
+
+    @media #{$breakpoint-xs} {
+        padding: 15rem 2rem 2rem 2rem;
+    }
     
     .text-hero {
             width: 50%;
             margin-bottom: 3rem;
+            @media #{$breakpoint-xs} {
+            }
+
 
             h2 {
                 font-size: 70px;
@@ -220,8 +244,8 @@
                 line-height: 1;   
 
                 @media #{$breakpoint-xs} {
-                    font-size: 40px;
-                    padding-top: 80px;
+                    font-size: 44px;
+                    padding-top: 50px;
                 }
 
                 &:before {
@@ -254,7 +278,8 @@
         width: 53%;
 
             @media #{$breakpoint-xs} {
-                margin-bottom: 40px;            
+                margin-bottom: 40px;
+                width: 100%;            
             }
 
         h3 {
@@ -264,6 +289,7 @@
             color: $dark;        
 
             @media #{$breakpoint-xs} {
+                font-size: 27px;
             }
         }
 
@@ -275,8 +301,8 @@
             margin-bottom: 1rem;
 
             @media #{$breakpoint-xs} {
-                font-size: 14px;
-                margin-right: 1rem;
+                font-size: 20px;
+    margin-right: 0;
             }
 
         }
@@ -354,6 +380,12 @@
             width: 370px;
             height: 475px;
 
+            @media #{$breakpoint-xs} {
+                margin: 1rem auto 1rem auto;
+                width: 300px;
+                height: 400px;
+            }
+
             img{
                 transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
             }
@@ -377,10 +409,17 @@
     position: relative;
     z-index: 0;
     padding: 16rem 3rem 1rem 3rem;
+
+    @media #{$breakpoint-xs} {
+        padding: 15rem 2rem 2rem 2rem;
+    }
     
     .text-hero {
             width: 50%;
             margin-bottom: 3rem;
+            @media #{$breakpoint-xs} {
+            }
+
 
             h2 {
                 font-size: 70px;
@@ -390,8 +429,8 @@
                 line-height: 1;   
 
                 @media #{$breakpoint-xs} {
-                    font-size: 40px;
-                    padding-top: 80px;
+                    font-size: 44px;
+                    padding-top: 50px;
                 }
 
                 &:before {
@@ -424,7 +463,8 @@
         width: 55%;
 
             @media #{$breakpoint-xs} {
-                margin-bottom: 40px;            
+                margin-bottom: 40px;
+                width: 100%;            
             }
 
         h3 {
@@ -434,6 +474,7 @@
             color: $dark;        
 
             @media #{$breakpoint-xs} {
+                font-size: 27px;
             }
         }
 
@@ -445,8 +486,8 @@
             margin-bottom: 1rem;
 
             @media #{$breakpoint-xs} {
-                font-size: 14px;
-                margin-right: 1rem;
+                font-size: 20px;
+                margin-right: 0;
             }
 
         }
@@ -529,6 +570,13 @@
             width: 370px;
             height: 475px;
 
+            @media #{$breakpoint-xs} {
+                margin: 1rem auto 1rem auto;
+                width: 300px;
+                height: 400px;
+            }
+
+
             img{
                 transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
                 height: 100%;
@@ -553,10 +601,18 @@
     position: relative;
     z-index: 0;
     padding: 16rem 3rem 1rem 3rem;
+
+    @media #{$breakpoint-xs} {
+        padding: 15rem 2rem 2rem 2rem;
+    }
     
     .text-hero {
             width: 50%;
             margin-bottom: 3rem;
+
+            @media #{$breakpoint-xs} {
+                    width: 100%;
+            }
 
             h2 {
                 font-size: 70px;
@@ -566,8 +622,8 @@
                 line-height: 1;   
 
                 @media #{$breakpoint-xs} {
-                    font-size: 40px;
-                    padding-top: 80px;
+                    font-size: 44px;
+                    padding-top: 50px;
                 }
 
                 &:before {
@@ -600,7 +656,8 @@
         width: 55%;
 
             @media #{$breakpoint-xs} {
-                margin-bottom: 40px;            
+                margin-bottom: 40px;
+                width: 100%;            
             }
 
         h3 {
@@ -610,6 +667,7 @@
             color: $dark;        
 
             @media #{$breakpoint-xs} {
+                font-size: 27px;
             }
         }
 
@@ -621,8 +679,8 @@
             margin-bottom: 1rem;
 
             @media #{$breakpoint-xs} {
-                font-size: 14px;
-                margin-right: 1rem;
+                font-size: 20px;
+    margin-right: 0;
             }
 
         }
@@ -705,6 +763,12 @@
             width: 370px;
             height: 475px;
 
+            @media #{$breakpoint-xs} {
+                margin: 1rem auto 1rem auto;
+                width: 300px;
+                height: 400px;
+            }
+
             img{
                 transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
                 height: 100%;
@@ -729,10 +793,17 @@
     position: relative;
     z-index: 0;
     padding: 16rem 3rem 1rem 3rem;
+
+    @media #{$breakpoint-xs} {
+        padding: 15rem 2rem 2rem 2rem;
+    }
     
     .text-hero {
             width: 60%;
             margin-bottom: 3rem;
+            @media #{$breakpoint-xs} {
+            }
+
 
             h2 {
                 font-size: 70px;
@@ -742,8 +813,8 @@
                 line-height: 1;   
 
                 @media #{$breakpoint-xs} {
-                    font-size: 40px;
-                    padding-top: 80px;
+                    font-size: 44px;
+                    padding-top: 50px;
                 }
 
                 &:before {
@@ -776,7 +847,8 @@
         width: 65%;
 
             @media #{$breakpoint-xs} {
-                margin-bottom: 40px;            
+                margin-bottom: 40px;
+                width: 100%;            
             }
 
         h3 {
@@ -786,6 +858,7 @@
             color: $dark;        
 
             @media #{$breakpoint-xs} {
+                font-size: 27px;
             }
         }
 
@@ -797,8 +870,8 @@
             margin-bottom: 1rem;
 
             @media #{$breakpoint-xs} {
-                font-size: 14px;
-                margin-right: 1rem;
+                font-size: 20px;
+    margin-right: 0;
             }
 
         }
@@ -881,6 +954,12 @@
             width: 370px;
             height: 475px;
 
+            @media #{$breakpoint-xs} {
+                margin: 1rem auto 1rem auto;
+                width: 300px;
+                height: 400px;
+            }
+
             img{
                 transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
                 height: 100%;
@@ -905,10 +984,17 @@
     position: relative;
     z-index: 0;
     padding: 16rem 3rem 1rem 3rem;
+
+    @media #{$breakpoint-xs} {
+        padding: 15rem 2rem 2rem 2rem;
+    }
     
     .text-hero {
             width: 60%;
             margin-bottom: 3rem;
+            @media #{$breakpoint-xs} {
+            }
+
 
             h2 {
                 font-size: 70px;
@@ -918,8 +1004,8 @@
                 line-height: 1;   
 
                 @media #{$breakpoint-xs} {
-                    font-size: 40px;
-                    padding-top: 80px;
+                    font-size: 44px;
+                    padding-top: 50px;
                 }
 
                 &:before {
@@ -952,7 +1038,8 @@
         width: 63%;
 
             @media #{$breakpoint-xs} {
-                margin-bottom: 40px;            
+                margin-bottom: 40px;
+                width: 100%;            
             }
 
         h3 {
@@ -962,6 +1049,7 @@
             color: $dark;        
 
             @media #{$breakpoint-xs} {
+                font-size: 27px;
             }
         }
 
@@ -973,8 +1061,8 @@
             margin-bottom: 1rem;
 
             @media #{$breakpoint-xs} {
-                font-size: 14px;
-                margin-right: 1rem;
+                font-size: 20px;
+    margin-right: 0;
             }
 
         }
@@ -1056,6 +1144,12 @@
             border-radius: 0;
             width: 370px;
             height: 475px;
+
+            @media #{$breakpoint-xs} {
+                margin: 1rem auto 1rem auto;
+                width: 300px;
+                height: 400px;
+            }
 
             img{
                 transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
