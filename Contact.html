@@ -27,7 +27,7 @@
         <h2>Menu</h2>
       </div>
       <div class="menu-leter-close">
-        <h2>Cerrar</h2>
+        <h2>Close</h2>
       </div>
       <div class="menu-icon logo-h">
         <span class="menu-icon__line menu-icon__line-left"></span>
@@ -41,16 +41,26 @@
         </a>
         </div>
         <div class="nav__content">
-          <ul class="nav__list">
-            
+          <ul class="nav__list">            
             <li class="nav__list-item"><a href="#">Work</a></li>
             <li class="nav__list-item"><a href="About.html">About us</a></li>
             <li class="nav__list-item"><a href="#">About you</a></li>
-            <li class="nav__list-item"><a href="Contact.html">Contact</a></li>
+            <li class="nav__list-item"><a href="Contact.html">Contact<span class="material-icons-round">arrow_forward</span></a></li>          
           </ul>
+          <div class="movil-menu">
+            <hr class="line-menu-movil">
+            <nav>
+                <ul class="our-link">
+                    <li class="footer-icon"><a href="https://www.instagram.com/lebrainage"><span class="icon-instagram iconso-"></span></a></li>
+                    <li class="footer-icon"><a href="https://twitter.com/LeBrainAge"><span class="icon-twitter iconso-"></span></a></li>
+                    <li class="footer-icon"><a href="https://www.linkedin.com/company/lebrain-agency"><span class="icon-linkedin iconso-"></span></a></li>
+                </ul>
+            </nav>
+        </div>
         </div>
       </div>
     </header>
+
 
     <!-- ***** contact Area Start ***** -->
     <section class="contact-area">
@@ -66,7 +76,7 @@
           <!-- Contact Form -->
           <div class="col-12">           
              <h2>How can we reach you?</h2>
-             <div class="buttoms-contact">
+             <div class="buttoms-contact d-none d-xl-block">
                 <div class="cat action">
                    <label><input type="checkbox" value="1"><span class="uza-btn btn-cont">Strategy</span></label>
                 </div>
@@ -84,9 +94,28 @@
                 </div>
                 <div class="cat action">
                    <label><input type="checkbox" value="6"><span class="uza-btn btn-cont">In house dev</span></label>
-                </div>               
-                
-             </div>      
+                </div> 
+             </div>
+             <div class="buttoms-contact d-block d-xl-none">
+                <div class="cat action">
+                   <label><input type="checkbox" value="1"><span class="uza-btn btn-cont">Strategy</span></label>
+                </div>
+                <div class="cat action">
+                   <label><input type="checkbox" value="5"><span class="uza-btn btn-cont">Social Media Content</span></label>
+                </div>
+                <div class="cat action">
+                   <label><input type="checkbox" value="4"><span class="uza-btn btn-cont">UX UI Design</span></label>
+                </div>                
+                <div class="cat action">
+                   <label><input type="checkbox" value="6"><span class="uza-btn btn-cont">In house dev</span></label>
+                </div> 
+                <div class="cat action">
+                   <label><input type="checkbox" value="2"><span class="uza-btn btn-cont">Branding</span></label>
+                </div>
+                <div class="cat action">
+                   <label><input type="checkbox" value="3"><span class="uza-btn btn-cont">Performance Content</span></label>
+                </div>
+             </div>     
           </div>
           <!-- Contact Form -->
           <div class="col-12 col-sm-7 col-lg-7">
@@ -135,17 +164,31 @@
     <!-- ***** contact Area End ***** -->
 
     <hr class="line-footer">
+
     <!-- ***** Footer Area Start ***** -->
     <footer class="footer-area">
         <div class="container">
-            <div class="row justify-content-between align-items-center">
+            <div class="row">
                 <!-- Single Footer Widget -->
-                <div class="col-12 col-lg-3">
+                <div class="col-12 col-lg-2 movil" data-aos="fade-up" data-aos-offset="0" data-aos-delay="100">
                     <img src="img/logo-letter.svg" class="logo-letter" alt="" width="180">
-                </div>     
+                </div> 
+
+                <div class="col-12 movil d-inline-flex d-xl-none" data-aos="fade-up" data-aos-offset="0" data-aos-delay="100">
+                  <div class="single-footer-widget">
+                    <!-- Nav -->
+                    <nav>
+                        <ul class="our-link">
+                          <li class="footer-icon"><a href="https://www.instagram.com/lebrainage"><span class="icon-instagram iconso-"></span></a></li>
+                          <li class="footer-icon"><a href="https://twitter.com/LeBrainAge"><span class="icon-twitter iconso-"></span></a></li>
+                          <li class="footer-icon"><a href="https://www.linkedin.com/company/lebrain-agency"><span class="icon-linkedin iconso-"></span></a></li>
+                        </ul>
+                    </nav>
+                  </div>
+                </div>
 
                 <!-- Single Footer Widget -->
-                <div class="col-12 col-lg-3">
+                <div class="col-5 col-lg-3" data-aos="fade-up" data-aos-offset="0" data-aos-delay="300">
                   <div class="single-footer-widget">
                     <!-- Nav -->
                     <nav>
@@ -160,15 +203,23 @@
                     </nav>
                   </div>
                 </div>
+
+                <div class="col-6  d-inline-flex d-xl-none" data-aos="fade-up" data-aos-offset="0" data-aos-delay="100">
+                  <div class="single-footer-widget"><nav>
+                        <ul class="our-link">
+                          <li class="footer-contact "><a href="Contact.html">Contact us<span class="material-icons-round">arrow_forward</span></a></li>
+                        </ul></nav>
+                  </div>
+                </div>
                 <!-- Single Footer Widget -->
-                <div class="col-12 col-lg-5">
+                <div class="col-12 col-lg-5 m-foo d-none d-xl-inline-flex" data-aos="fade-up" data-aos-offset="0" data-aos-delay="500">
                   <div class="single-footer-widget">
                     <!-- Nav -->
                     <nav>
                         <ul class="our-link">
-                          <li class="footer-icon"><a href="#"><span class="icon-instagram iconso-"></span></a></li>
-                          <li class="footer-icon"><a href="#"><span class="icon-twitter iconso-"></span></a></li>
-                          <li class="footer-icon"><a href="#"><span class="icon-linkedin iconso-"></span></a></li>
+                          <li class="footer-icon"><a href="https://www.instagram.com/lebrainage"><span class="icon-instagram iconso-"></span></a></li>
+                          <li class="footer-icon"><a href="https://twitter.com/LeBrainAge"><span class="icon-twitter iconso-"></span></a></li>
+                          <li class="footer-icon"><a href="https://www.linkedin.com/company/lebrain-agency"><span class="icon-linkedin iconso-"></span></a></li>
                           <li class="footer-contact"><a href="Contact.html">Contact us<span class="material-icons-round">arrow_forward</span></a></li>
                         </ul>
                     </nav>
@@ -178,6 +229,7 @@
         </div>
     </footer>
     <!-- ***** Footer Area End ***** -->
+
 
     <!-- ******* All JS Files ******* -->
     <!-- jQuery js -->
@@ -198,14 +250,13 @@
     <script src="js/validator-contact.js"></script>
     <script src="js/aos.js"></script>
 
-    <!-- Initialize AOS -->
-    <script>
-      AOS.init({
-          easing: 'ease-in-out-sine',
-          duration: 1000,
-          once: true
-        });
-    </script>
-</body>
+  <!-- Initialize Swiper -->
+  <script>
+    document.body.style.zoom="90%";
 
-</html>
+    AOS.init({
+        easing: 'ease-in-out-back',
+        offset: 100,
+        duration: 1000
+      });
+  </script>
