@@ -15,14 +15,14 @@
         position: relative;
         z-index: 1;
         text-align: left;
-        margin-left: 3rem;
+        margin-left: 7rem;
 
         @media #{$breakpoint-xs} {
             margin-left: 0;
         }
 
         a {
-            font-size: 88px;
+            font-size: 70px;
             display: block;
             font-weight: 600;
             margin-bottom: 0;
@@ -42,8 +42,8 @@
 
         h2 {
             margin-bottom: 0;
-            line-height: 1;
-            font-size: 35px;
+            line-height: 1.5;
+            font-size: 21px;
             color: #121212;
 
             @media #{$breakpoint-xs} {
