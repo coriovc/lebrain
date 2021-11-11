@@ -472,8 +472,9 @@ textarea:focus, input:focus { outline: none; }
 @media only screen and (max-width: 767px) { .footer-area .row { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -ms-flex-align: start !important; align-items: flex-start !important; } }
 .footer-area .movil { text-align: left; }
 @media only screen and (max-width: 767px) { .footer-area .movil { text-align: center; justify-content: center; margin-bottom: 1rem; } }
-.footer-area .logo-letter { margin-left: 1rem; width: 60%; }
+.footer-area .logo-letter { margin-left: -3rem; width: 60%; }
 @media only screen and (max-width: 767px) { .footer-area .logo-letter { margin-left: 0; width: 40%; } }
+.footer-area .m-foo { margin-left: 7rem; margin-right: -7rem; }
 
 .single-footer-widget { position: relative; z-index: 1; margin: 0; }
 @media only screen and (max-width: 767px) { .single-footer-widget { margin: 0.7rem 0 0 0; } }
@@ -1311,7 +1312,7 @@ body.nav-active .nav__list-item:nth-child(4) { transition-delay: 0.9s; }
 .sec-passion-area .nl-content a { font-size: 26px; font-weight: 700; color: #121212; margin-left: 1.5rem; }
 @media only screen and (max-width: 767px) { .sec-passion-area .nl-content a { margin-left: 0; } }
 .sec-passion-area .nl-content a span { position: absolute; font-size: 60px; color: #00F6A1; margin-top: 1rem; margin-left: -1rem; transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1); }
-.sec-passion-area .nl-content a:before { content: ""; position: absolute; background: #00F6A1; width: 75px; height: 24px; border-radius: 25px; top: 80%; left: 0; transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1); z-index: -1; }
+.sec-passion-area .nl-content a:before { content: ""; position: absolute; background: #00F6A1; width: 75px; height: 24px; border-radius: 25px; top: -57%; left: 0; transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1); z-index: -1; }
 @media only screen and (max-width: 767px) { .sec-passion-area .nl-content a:before { height: 13px; } }
 .sec-passion-area .nl-content a:hover:before { left: -5%; }
 .sec-passion-area .nl-content a:hover span { margin-left: 0; }

@@ -37,7 +37,7 @@
     }
 
     .logo-letter{
-        margin-left: 1rem;
+        margin-left: -3rem;
         width: 60%;
         
         @media #{$breakpoint-xs} {
@@ -45,6 +45,11 @@
             width: 40%;
         }    
 
+    }
+
+    .m-foo{
+        margin-left: 7rem;
+        margin-right: -7rem;
     }
     
 }
