@@ -1322,7 +1322,7 @@ body.nav-active .nav__list-item:nth-child(4) { transition-delay: 0.9s; }
 @media only screen and (max-width: 767px) { .sec-passion-area .nl-content a { margin-left: 0; } }
 .sec-passion-area .nl-content a span { position: absolute; font-size: 60px; color: #00F6A1; margin-top: 1rem; margin-left: -1rem; transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1); }
 .sec-passion-area .nl-content a:before { content: ""; position: absolute; background: #00F6A1; width: 75px; height: 24px; border-radius: 25px; top: -57%; left: 0; transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1); z-index: -1; }
-@media only screen and (max-width: 767px) { .sec-passion-area .nl-content a:before { height: 13px; } }
+@media only screen and (max-width: 767px) { .sec-passion-area .nl-content a:before { height: 13px; top: 79%; } }
 .sec-passion-area .nl-content a:hover:before { left: -5%; }
 .sec-passion-area .nl-content a:hover span { margin-left: 0; }
 .sec-passion-area .nl-content p { font-size: 22px; line-height: 1.5; margin-bottom: 2rem; margin-right: 4rem; font-weight: 600; }
