@@ -3,10 +3,10 @@
 .footer-area {
     position: relative;
     z-index: 1;
-    padding: 5rem 0 7rem 0;
+    padding: 5rem 0 8rem 0;
     
     @media #{$breakpoint-xs} {
-        padding: 3rem 1rem 4rem 1rem;
+        padding: 3rem 1rem 6rem 1rem;
     }
 
     &.about{

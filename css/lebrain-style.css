@@ -520,8 +520,8 @@ textarea:focus, input:focus { outline: none; }
 .contact-heading span.a { margin-top: 0.5rem; margin-left: 0.9rem; }
 
 /* :: Footer */
-.footer-area { position: relative; z-index: 1; padding: 5rem 0 7rem 0; }
-@media only screen and (max-width: 767px) { .footer-area { padding: 3rem 1rem 4rem 1rem; } }
+.footer-area { position: relative; z-index: 1; padding: 5rem 0 8rem 0; }
+@media only screen and (max-width: 767px) { .footer-area { padding: 3rem 1rem 6rem 1rem; } }
 .footer-area.about { padding: 5rem 0 8rem 0; }
 @media only screen and (max-width: 767px) { .footer-area.about { padding: 3rem 1rem 6rem 1rem; } }
 .footer-area .row { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-align: center !important; align-items: center !important; }
