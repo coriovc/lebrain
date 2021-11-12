@@ -123,16 +123,6 @@ table {
   border-spacing: 0;
 }
 
-::-moz-selection {
-  background-color: #B3D4FC;
-  text-shadow: none;
-}
-
-::selection {
-  background-color: #B3D4FC;
-  text-shadow: none;
-}
-
 @media screen {
   [hidden~=screen] {
     display: inherit;

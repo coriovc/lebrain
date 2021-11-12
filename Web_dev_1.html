@@ -19,6 +19,14 @@
 </head>
 <body id="top">
 
+  <!-- Preloader -->
+    <div id="preloader">
+        <div class="wrapper">
+            <div class="cssload-loader"></div>
+            <div class="img-load animate-lebrain"><img src="img/logo-letter.svg" alt="logo"></div>
+        </div>
+    </div>
+
     <header class="menu">
       <div class="menu-logo logo-h">        
         <a href="index.html"><img src="img/logo-black.svg" alt="logo" class="logo-head"></a>
@@ -72,25 +80,25 @@
             <img src="img/core-img/ux-icon.svg" alt="icon" class="icon">
         </div>
         <div class="l-content">
-            <h3>Our UI/UX team designs engaging and <strong>simple-to-use</strong> user interfaces for mobile apps and web products.</h3>
-            <p>We always work with a user-friendly and mobile first approach.</p>
+            <h3 data-aos="fade-up">Our UI/UX team designs engaging and <strong>simple-to-use</strong> user interfaces for mobile apps and web products.</h3>
+            <p data-aos="fade-up" data-aos-delay="200">We always work with a user-friendly and mobile first approach.</p>
         </div> 
         <div class="proyects">
           <div class="row align-items-center justify-content-center">
                 <!-- landing Content -->
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-delay="100">
                   <a href="#" class="card">
-                    <img src="img/core-img/ux-ui.png" alt="brand" class="img-brand">    
+                    <img src="img/core-img/ux-ui.png" alt="proyect" class="img-proyect">    
                   </a>
                 </div> 
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-delay="300">
                   <a href="#" class="card">
-                    <img src="img/core-img/ux-ui.png" alt="brand" class="img-brand">    
+                    <img src="img/core-img/ux-ui.png" alt="proyect" class="img-proyect">    
                   </a>
                 </div>
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-delay="500">
                   <a href="#" class="card">
-                    <img src="img/core-img/ux-ui.png" alt="brand" class="img-brand">    
+                    <img src="img/core-img/ux-ui.png" alt="proyect" class="img-proyect">    
                   </a>
                 </div>                
           </div>
@@ -105,7 +113,7 @@
             <div class="row align-items-center justify-content-center">
                 <!-- Newsletter Content -->
                 <div class="col-12 col-lg-6">
-                    <div class="nl-content" data-aos="fade-up" data-aos-offset="50">
+                    <div class="nl-content" data-aos="fade-up">
                         <h2>We are a nimble digital marketing and creative agency that specialises in... <strong>you.</strong></h2>
                         <a href="contact.html">;-) Let's talk</a>
 
@@ -119,15 +127,15 @@
     <hr class="line-footer">
 
     <!-- ***** Footer Area Start ***** -->
-    <footer class="footer-area">
+    <footer class="footer-area about">
         <div class="container">
             <div class="row">
                 <!-- Single Footer Widget -->
-                <div class="col-12 col-lg-2 movil" data-aos="fade-up" data-aos-offset="0" data-aos-delay="100">
+                <div class="col-12 col-lg-2 movil" data-aos="fade-up" data-aos-delay="100">
                     <img src="img/logo-letter.svg" class="logo-letter" alt="" width="180">
                 </div> 
 
-                <div class="col-12 movil d-inline-flex d-xl-none" data-aos="fade-up" data-aos-offset="0" data-aos-delay="100">
+                <div class="col-12 movil d-inline-flex d-xl-none" data-aos="fade-up"  data-aos-delay="100">
                   <div class="single-footer-widget">
                     <!-- Nav -->
                     <nav>
@@ -141,7 +149,7 @@
                 </div>
 
                 <!-- Single Footer Widget -->
-                <div class="col-5 col-lg-3" data-aos="fade-up" data-aos-offset="0" data-aos-delay="300">
+                <div class="col-5 col-lg-3" data-aos="fade-up"  data-aos-delay="300">
                   <div class="single-footer-widget">
                     <!-- Nav -->
                     <nav>
@@ -157,7 +165,7 @@
                   </div>
                 </div>
 
-                <div class="col-6  d-inline-flex d-xl-none" data-aos="fade-up" data-aos-offset="0" data-aos-delay="100">
+                <div class="col-6  d-inline-flex d-xl-none" data-aos="fade-up" data-aos-delay="100">
                   <div class="single-footer-widget"><nav>
                         <ul class="our-link">
                           <li class="footer-contact "><a href="Contact.html">Contact us<span class="material-icons-round">arrow_forward</span></a></li>
@@ -165,7 +173,7 @@
                   </div>
                 </div>
                 <!-- Single Footer Widget -->
-                <div class="col-12 col-lg-5 m-foo d-none d-xl-inline-flex" data-aos="fade-up" data-aos-offset="0" data-aos-delay="500">
+                <div class="col-12 col-lg-5 m-foo d-none d-xl-inline-flex" data-aos="fade-up" data-aos-delay="500">
                   <div class="single-footer-widget">
                     <!-- Nav -->
                     <nav>
@@ -207,7 +215,7 @@
 
     AOS.init({
         easing: 'ease-in-out-back',
-        offset: 100,
+        offset: 0,
         duration: 1000
       });
   </script>

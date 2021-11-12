@@ -6,16 +6,16 @@
     padding: 16rem 3rem 1rem 3rem;
 
     @media #{$breakpoint-xs} {
-        padding: 15rem 2rem 2rem 2rem;
-    }
-
-    @media #{$breakpoint-xs} {
-        padding: 15rem 2rem 2rem 2rem;
+        padding: 8rem 2rem 2rem 2rem;;
     }
     
     .text-hero {
             width: 50%;
             margin-bottom: 3rem;
+
+            @media #{$breakpoint-xs} {
+                width: 100%;
+            }
 
             h2 {
                 font-size: 70px;
@@ -25,8 +25,9 @@
                 line-height: 1;   
 
                 @media #{$breakpoint-xs} {
-                    font-size: 44px;
+                    font-size: 54px;
                     padding-top: 50px;
+                    
                 }
 
                 &:before {
@@ -37,18 +38,30 @@
                     height: 33px;
                     border-radius: 25px;
                     top: 16.5rem;
-                    left: 17.5rem;
+                    left: 22rem;
                     transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
                     z-index: -1;
+                    @media #{$breakpoint-xs} {
+                        width: 87px;
+                        height: 28px;
+                        top: 11.5rem;
+                        left: 11rem;
+                    }
                 }
             }
 
             .icon { 
-                left: 4.5rem;
+                left: 9.5rem;
                 position: absolute;
                 top: 15rem;
                 user-select: none;
                 z-index: 200;
+
+                @media #{$breakpoint-xs} {
+                    left: 1rem;
+                    width: 11%;
+                    top: 10.3rem;
+                }
 
             }
 
@@ -70,7 +83,7 @@
             color: $dark;        
 
             @media #{$breakpoint-xs} {
-                font-size: 27px;
+                font-size: 22px;
             }
 
         }
@@ -90,7 +103,12 @@
             color: $dark;        
 
             @media #{$breakpoint-xs} {
-                font-size: 27px;
+                font-size: 20px;
+
+                &:before {
+                    height: 3px;
+                }
+
             }
 
             &:before {
@@ -104,7 +122,12 @@
                     left: 0rem;
                     transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
                     z-index: -1;
-                }
+                    @media #{$breakpoint-xs} {
+                        height: 3px;
+                        top: 6.5rem;
+
+                    }
+            }
 
         }
 
@@ -226,13 +249,14 @@
     padding: 16rem 3rem 1rem 3rem;
 
     @media #{$breakpoint-xs} {
-        padding: 15rem 2rem 2rem 2rem;
+        padding: 8rem 2rem 2rem 2rem;;
     }
     
     .text-hero {
             width: 50%;
             margin-bottom: 3rem;
             @media #{$breakpoint-xs} {
+                width: 100%;
             }
 
 
@@ -244,7 +268,7 @@
                 line-height: 1;   
 
                 @media #{$breakpoint-xs} {
-                    font-size: 44px;
+                    font-size: 54px;
                     padding-top: 50px;
                 }
 
@@ -256,19 +280,30 @@
                     height: 33px;
                     border-radius: 25px;
                     top: 18.5rem;
-                    left: 6rem;
+                    left: 11rem;
                     transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
                     z-index: -1;
+                    @media #{$breakpoint-xs} {
+                        width: 106px;
+                        height: 28px;
+                        top: 13rem;
+                        left: 1.5rem;
+                    }
                 }
             }
 
             .icon { 
-                left: 24rem;
                 position: absolute;
+                left: 28rem;                
                 top: 14.5rem;
                 user-select: none;
                 z-index: 200;
 
+                @media #{$breakpoint-xs} {                    
+                    left: 15rem;
+                    top: 9.5rem;
+                    width: 12%;
+                }
             }
 
     }
@@ -411,13 +446,14 @@
     padding: 16rem 3rem 1rem 3rem;
 
     @media #{$breakpoint-xs} {
-        padding: 15rem 2rem 2rem 2rem;
+        padding: 8rem 2rem 2rem 2rem;;
     }
     
     .text-hero {
             width: 50%;
             margin-bottom: 3rem;
             @media #{$breakpoint-xs} {
+                width: 100%;
             }
 
 
@@ -441,19 +477,30 @@
                     height: 33px;
                     border-radius: 25px;
                     top: 18.5rem;
-                    left: 14rem;
+                    left: 19rem;
                     transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
                     z-index: -1;
+                    @media #{$breakpoint-xs} {
+                        width: 77px;
+                        height: 26px;
+                        top: 12.5rem;
+                        left: 7rem;
+                    }
                 }
             }
 
             .icon { 
-                left: 4rem;
+                left: 9rem;
                 position: absolute;
                 top: 14.5rem;
                 user-select: none;
                 z-index: 200;
 
+                @media #{$breakpoint-xs} {
+                    left: 1rem;
+                    top: 10.3rem;
+                    width: 11%;
+                }
             }
 
     }
@@ -603,7 +650,7 @@
     padding: 16rem 3rem 1rem 3rem;
 
     @media #{$breakpoint-xs} {
-        padding: 15rem 2rem 2rem 2rem;
+        padding: 8rem 2rem 2rem 2rem;;
     }
     
     .text-hero {
@@ -634,19 +681,31 @@
                     height: 36px;
                     border-radius: 25px;
                     top: 15.5rem;
-                    left: 17rem;
+                    left: 20rem;
                     transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
                     z-index: -1;
+                    @media #{$breakpoint-xs} {
+                        width: 87px;
+                        height: 28px;                        
+                        top: 10.5rem;
+                        left: 8rem;
+
+                    }
                 }
             }
 
             .icon { 
-                left: 6.5rem;
+                left: 11rem;
                 position: absolute;
                 top: 15.5rem;
                 user-select: none;
                 z-index: 200;
 
+                @media #{$breakpoint-xs} {
+                    left: 2rem;
+                    top: 10.8rem;
+                    width: 12%;
+                }
             }
 
     }
@@ -795,13 +854,15 @@
     padding: 16rem 3rem 1rem 3rem;
 
     @media #{$breakpoint-xs} {
-        padding: 15rem 2rem 2rem 2rem;
+        padding: 8rem 2rem 2rem 2rem;;
     }
     
     .text-hero {
             width: 60%;
             margin-bottom: 3rem;
+            
             @media #{$breakpoint-xs} {
+                width: 100%;
             }
 
 
@@ -828,6 +889,12 @@
                     left: 11.5rem;
                     transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
                     z-index: -1;
+                    @media #{$breakpoint-xs} {
+                        width: 83px;
+                        height: 23px;
+                        top: 11rem;
+                        left: 2rem;
+                    }
                 }
             }
 
@@ -838,6 +905,9 @@
                 user-select: none;
                 z-index: 200;
 
+                @media #{$breakpoint-xs} {
+                    left: 11rem;
+                }
             }
 
     }
@@ -986,13 +1056,15 @@
     padding: 16rem 3rem 1rem 3rem;
 
     @media #{$breakpoint-xs} {
-        padding: 15rem 2rem 2rem 2rem;
+        padding: 8rem 2rem 2rem 2rem;;
     }
     
     .text-hero {
             width: 60%;
             margin-bottom: 3rem;
+            
             @media #{$breakpoint-xs} {
+                width: 100%;
             }
 
 
@@ -1019,6 +1091,12 @@
                     left: 33.5rem;
                     transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
                     z-index: -1;
+                    @media #{$breakpoint-xs} {
+                        width: 87px;
+                        height: 28px;
+                        top: 15.5rem;
+                        left: 9rem;
+                    }
                 }
             }
 
@@ -1029,6 +1107,11 @@
                 user-select: none;
                 z-index: 200;
 
+                @media #{$breakpoint-xs} {
+                    left: 14.5rem;
+                    top: 9rem;
+                    width: 14%;
+                }
             }
 
     }

@@ -9,15 +9,17 @@
 ::-webkit-scrollbar-track {
     background-color: transparent;
 }
-.color-primary {
-    color: #04948A!important;
+
+::selection {
+    background-color: #00F6A1;
+    color: #12121A;
 }
-.bg-gray-sec {
-    background-color: #f0f0f0;
+ 
+::-moz-selection {
+    background-color:#00F6A1;
+    color: #12121A;
 }
-.bg-gray-sec-mod {
-    background-color: #f9f9f9;
-}
+
 
 .wi-100{
     width: 100%;
@@ -37,6 +39,16 @@
     right: 10%;
     border-top: 2px solid #000;
 }
+
+@media only screen and (max-width: 767px) {
+  .line-hero{
+    top: 13%;
+    width: 85%;
+    left: 6%;
+
+  }
+}
+
 
 
 .iframe-video{
@@ -207,18 +219,8 @@
     margin: -7% 0 0 -25%;
     z-index: 2;
 }
-.img-team {
-    width: 46%;
-    position: absolute;
-    z-index: 2;
-    right: 15rem;
-}
-.img-team-figura {
-    width: 40%;
-    position: absolute;
-    margin: -3rem 0 0 0;
-    right: 0;
-}
+
+
 .img-ear {
     width: 410px;
     position: absolute;

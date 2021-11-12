@@ -65,8 +65,57 @@
 
 .about-area {
     position: relative;
-    z-index: 1;
-    height: 100vh;
+    z-index: 0;
+    padding: 15rem 0 5rem 0;
+
+    @media #{$breakpoint-xs} {
+        padding: 7rem 2rem 2rem 2rem;
+    }
+
+    .text-hero {
+            width: 60%;
+
+            @media #{$breakpoint-xs} {
+                width: 80%;
+
+            }
+
+            h2 {
+                font-size: 65px;
+                margin-bottom: 30px;
+                color: $dark;
+                font-weight: 300;
+                line-height: 1;   
+
+                span{
+                    font-weight: 700;
+                }
+
+                @media #{$breakpoint-xs} {
+                    font-size: 50px;
+                    padding-top: 80px;
+                }
+            }
+
+            .highlighted__line {                
+                height: 13%;
+                left: 31%;
+                position: absolute;
+                top: 65%;
+                user-select: none;
+                width: 20.5%;
+                z-index: -1;
+
+                @media #{$breakpoint-xs} {
+                    height: 10.5%;
+                    left: 8%;
+                    top: 76%;
+                    width: 58%;
+
+                }
+            }
+
+    }
 
 }
 
@@ -237,7 +286,7 @@
 .sec-about-area {
     position: relative;
     z-index: 0;
-    padding: 4rem 0;
+    padding: 0 0 7rem 0;
 
     @media #{$breakpoint-xs} {
         padding: 1rem 2rem 2rem 2rem;
@@ -317,9 +366,125 @@
     z-index: 0;
     padding: 4rem 0;
     background-color: #f5f5f5;
+    margin-bottom: 6rem;
+
 
     @media #{$breakpoint-xs} {
         padding: 2rem 1rem;
+    }
+
+    .card-flex{
+        display: inline-flex;
+        @media #{$breakpoint-xs} {
+        display: block;
+        }
+    }
+
+    .card{
+        border: none;
+        background: none;
+        align-items: center;
+        text-align: center;
+        width: 100%;        
+        height: 320px;        
+        transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+
+        @media #{$breakpoint-xs} {                    
+            margin: 1rem 0 1rem 0;
+        }
+            
+            h3{
+                font-size: 19px;
+                font-weight: 700;
+                bottom: 16%;
+                color: $dark ;
+                z-index: 200;
+                position: absolute;
+                transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+                @media #{$breakpoint-xs} {                    
+                    bottom: 12%;
+                }
+
+                &.color-w{
+                    color: #fff ;
+                }
+            }
+
+            .img-team{
+                width: 80%;
+                position: absolute;
+                z-index: -1;
+                user-select: none;
+                transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+                @media #{$breakpoint-xs} {
+                    
+                }
+            }
+
+            .img-icon{
+                top: 10%;
+                width: 38%;
+                position: absolute;
+                left: -6%;
+                user-select: none;
+                transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+                @media #{$breakpoint-xs} {
+                    top: 15%;
+                    width: 30%;                
+                    left: -3%;
+                }
+            }
+
+            .img-line{
+                width: 65%;
+                bottom: 3rem;
+                position: absolute;
+                user-select: none;
+                transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+                @media #{$breakpoint-xs} {
+                    bottom: 2rem;
+                }
+
+                &.blue{
+                    width: 75%;
+                }
+            }
+       
+    }
+
+    .card:hover{
+            h3{
+                transform: scale(1.1);
+                bottom: 2.2rem;
+            }
+
+            .img-team{
+                transform: scale(1.05);
+            }
+
+            .img-icon{
+                top:18%;
+                left: -2rem;
+                -webkit-animation: mover-icon 1s infinite  alternate;
+                animation: mover-icon 1s infinite  alternate;
+                @media #{$breakpoint-xs} {                                   
+                    left: 0;
+                }
+            }
+
+            .img-line{
+                transform: scale(1.1);
+                bottom: 2rem;
+            }
+
+          @-webkit-keyframes mover-icon {
+                0% { transform: scale(1); }
+                100% { transform: scale(1.05); }
+          }
+          @keyframes mover-icon {
+                0% { transform: scale(1); }
+                100% { transform: scale(1.05); }
+          }
     }
 
     .l-content {
@@ -327,6 +492,7 @@
         z-index: 1;
         width: 66%;
         margin-left: 8rem;
+        margin-bottom: 4rem;
 
             @media #{$breakpoint-xs} {
                 margin-bottom: 40px;

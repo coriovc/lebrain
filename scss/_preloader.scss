@@ -15,11 +15,42 @@
 .wrapper {
     margin: auto;
     display: block;
+
+    .img-load{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: 99999;
+        top: 0;
+        left: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .animate-lebrain{
+      -webkit-animation: ani-lebrain 0.5s infinite  alternate;
+      animation: ani-lebrain 0.5s infinite  alternate;
+    }
+      @-webkit-keyframes ani-lebrain {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.2); }
+      }
+      @keyframes ani-lebrain {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.2); }
+      }
 }
 
 .cssload-loader {
-    width: 49px;
-    height: 49px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     display: inline-block;
     position: relative;

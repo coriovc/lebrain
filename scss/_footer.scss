@@ -47,6 +47,7 @@
     .logo-letter{
         margin-left: -3rem;
         width: 60%;
+        user-select: none;
         
         @media #{$breakpoint-xs} {
             margin-left: 0;
