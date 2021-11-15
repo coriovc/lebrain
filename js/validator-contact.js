@@ -3,8 +3,10 @@ $( document ).ready( function () {
       $( "#contact_form" ).validate( {
         rules: {
           name: "required",
-          phone: {required: true, minlength: 10},  
-          email: {required: true, email: true},                  
+          email: {required: true, email: true},  
+          phone: {required: true, minlength: 10},
+          company: "required",
+          country: "required",             
           message: "required"
           },
         messages: {
@@ -12,7 +14,9 @@ $( document ).ready( function () {
           phone: {required: "Please enter a phone number.",
                   minlength: "Enter the area code without the 15: EJ: 1145652798."},
           email:{required: "Please enter an email",
-                email:"The email format is not valid EJ: example@mail.com"},                    
+                email:"The email format is not valid EJ: example@mail.com"},
+          company: "Please enter your company",
+          country: "Please enter your country",                
           message: "Please write a message."
           },
         errorElement: "span",
