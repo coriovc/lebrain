@@ -380,102 +380,105 @@
         }
     }
 
-    .card{
-        border: none;
-        background: none;
-        align-items: center;
-        text-align: center;
-        width: 100%;        
-        height: 320px;        
-        transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-
-        @media #{$breakpoint-xs} {                    
-            margin: 1rem 0 1rem 0;
-        }
-            
+    .ani{
+        .text{
+            text-align: center;
             h3{
-                font-size: 19px;
-                font-weight: 700;
-                bottom: 16%;
-                color: $dark ;
-                z-index: 200;
-                position: absolute;
-                transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-                @media #{$breakpoint-xs} {                    
-                    bottom: 12%;
-                }
+                    font-size: 19px;
+                    font-weight: 700;
+                    margin-top: 2rem;
+                    color: $dark ;
+                    z-index: 200;
+                    transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+                    @media #{$breakpoint-xs} {                    
+                        bottom: 12%;
+                    }
 
-                &.color-w{
-                    color: #fff ;
+                    &.color-w{
+                        color: #fff ;
+                    }
                 }
+        }
+
+        .card{
+            border: none;
+            background: none;
+            align-items: center;
+            text-align: center;
+            width: 100%;        
+            height: 320px;        
+            transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+
+            @media #{$breakpoint-xs} {                    
+                margin: 1rem 0 1rem 0;
             }
 
-            .img-team{
-                width: 80%;
-                position: absolute;
-                z-index: -1;
-                user-select: none;
-                transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-                @media #{$breakpoint-xs} {
-                    
-                }
+            &.circle {
+              border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+              overflow: hidden;
+              animation: morph 4s cubic-bezier(0.38, 0.33, 0.54, 0.43) infinite;
+
+
+              &.a{
+                animation-delay: 1s;
+              }
+
+              &.b{
+                animation-delay: 2s;
+              }
+
+
             }
 
-            .img-icon{
-                top: 10%;
-                width: 38%;
-                position: absolute;
-                left: -6%;
-                user-select: none;
-                transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-                @media #{$breakpoint-xs} {
-                    top: 15%;
-                    width: 30%;                
-                    left: -3%;
-                }
+            &.circle img {
+              width: 100%;
             }
 
-            .img-line{
-                width: 65%;
-                bottom: 3rem;
-                position: absolute;
-                user-select: none;
-                transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-                @media #{$breakpoint-xs} {
-                    bottom: 2rem;
-                }
 
-                &.blue{
-                    width: 75%;
-                }
+            @keyframes morph{
+              0%, 100% {
+              border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+              }
+              34% {
+                border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+              }
+              67% {
+                border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+              }
             }
-       
+
+                
+                .img-team{
+                    width: 80%;
+                    position: absolute;
+                    z-index: 0;
+                    user-select: none;
+                    transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+                    @media #{$breakpoint-xs} {
+                        
+                    }
+                }
+         
+        }
+
     }
 
-    .card:hover{
-            h3{
-                transform: scale(1.1);
-                bottom: 2.2rem;
+    .ani:hover{
+            
+            .text{
+                h3{
+                    transform: scale(1.1);
+                    bottom: 2.2rem;
+                }            
             }
 
-            .img-team{
-                transform: scale(1.05);
-            }
-
-            .img-icon{
-                top:18%;
-                left: -2rem;
-                -webkit-animation: mover-icon 1s infinite  alternate;
-                animation: mover-icon 1s infinite  alternate;
-                @media #{$breakpoint-xs} {                                   
-                    left: 0;
+            .card{
+                .img-team{
+                    transform: scale(1.05);
                 }
             }
 
-            .img-line{
-                transform: scale(1.1);
-                bottom: 2rem;
-            }
+
 
           @-webkit-keyframes mover-icon {
                 0% { transform: scale(1); }
