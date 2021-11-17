@@ -390,9 +390,37 @@
                     color: $dark ;
                     z-index: 200;
                     transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+
                     @media #{$breakpoint-xs} {                    
                         bottom: 12%;
                     }
+
+                    .line{
+                            content: "";
+                            position: absolute;
+                            background: #00F6A1;
+                            width: 52px;
+                            height: 15px;
+                            border-radius: 25px;
+                            top: 22.8rem;
+                            left: 6.5rem;
+                            transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+                            z-index: -1;
+                    }
+
+                    .line-2{
+                            content: "";
+                            position: absolute;
+                            background: #00F6A1;
+                            width: 52px;
+                            height: 15px;
+                            border-radius: 25px;
+                            top: 21.8rem;
+                            left: 6.5rem;
+                            transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+                            z-index: -1;
+                    }
+
 
                     &.color-w{
                         color: #fff ;
@@ -406,8 +434,8 @@
             align-items: center;
             text-align: center;
             width: 100%;        
-            height: 320px;        
-            transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+            height: 320px;
+            background: #ddd;
 
             @media #{$breakpoint-xs} {                    
                 margin: 1rem 0 1rem 0;
@@ -416,7 +444,8 @@
             &.circle {
               border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
               overflow: hidden;
-              animation: morph 4s cubic-bezier(0.38, 0.33, 0.54, 0.43) infinite;
+              animation: morph 10s cubic-bezier(0.38, 0.33, 0.54, 0.43)  infinite  alternate;
+              animation-play-state: running;
 
 
               &.a{
@@ -429,11 +458,6 @@
 
 
             }
-
-            &.circle img {
-              width: 100%;
-            }
-
 
             @keyframes morph{
               0%, 100% {
@@ -449,7 +473,7 @@
 
                 
                 .img-team{
-                    width: 80%;
+                    width:100%;
                     position: absolute;
                     z-index: 0;
                     user-select: none;
@@ -466,9 +490,16 @@
     .ani:hover{
             
             .text{
-                h3{
-                    transform: scale(1.1);
-                    bottom: 2.2rem;
+                h3{                    
+
+                    .line{
+                        left: 14.5rem;
+                        animation: mover-line all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1)  infinite  alternate;
+                    }
+                    .line-2{
+                        left: 14.5rem;
+                        animation: mover-line all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1)  infinite  alternate;
+                    }
                 }            
             }
 
@@ -480,13 +511,13 @@
 
 
 
-          @-webkit-keyframes mover-icon {
-                0% { transform: scale(1); }
-                100% { transform: scale(1.05); }
+          @-webkit-keyframes mover-line {
+                0% { left: 14.5rem; }
+                100% {left: 6.5rem; }
           }
-          @keyframes mover-icon {
-                0% { transform: scale(1); }
-                100% { transform: scale(1.05); }
+          @keyframes mover-line {
+                0% { left: 14.5rem; }
+                100% {left: 6.5rem; }
           }
     }
 
