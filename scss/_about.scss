@@ -98,10 +98,10 @@
             }
 
             .highlighted__line {                
-                height: 13%;
+                height: 7%;
                 left: 31%;
                 position: absolute;
-                top: 65%;
+                top: 31%;
                 user-select: none;
                 width: 20.5%;
                 z-index: -1;
@@ -114,9 +114,229 @@
 
                 }
             }
+    }
+    .l-content {
+        position: relative;
+        z-index: 1;
+        width: 66%;
+        margin-top: 9rem;
 
+            @media #{$breakpoint-xs} {
+                width: 100%;
+                margin-bottom: 40px;            
+            }
+
+        h2 {
+            font-size: 35px;
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+            color: $dark;        
+
+            @media #{$breakpoint-xs} {
+                font-size: 37px;
+                font-weight: 600;
+            }
+        }
+        h3 {
+            font-size: 22px;
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+            color: $dark;        
+
+            @media #{$breakpoint-xs} {
+                ont-size: 23px;
+            }
+        }
+
+        p {
+            margin-bottom: 0;
+            line-height: 1.5;
+            margin-right: 1rem;
+            font-size:18px;
+            margin-bottom: 1rem;
+
+            @media #{$breakpoint-xs} {
+                font-size: 19px;
+                margin-right: 0rem;
+                margin-bottom: 2rem;
+            }
+
+        }
+
+        a {
+            font-size: 35px;
+            display: block;
+            font-weight: 600;
+            margin-bottom: 0;
+            color: $primary;
+            width: fit-content;
+            transition: all 0.3s ease;       
+
+            @media #{$breakpoint-xs} {
+                font-size: 40px;
+            }
+        }
+
+        a:hover {
+            margin-left:2rem;   
+        }
     }
 
+
+    .lamp{
+      position: absolute;
+      top: 50%;
+      left: 63%;
+      transform: translate(-50%, -50%);
+      
+      height: 100vh;
+      height: 100vh;
+      width: 100vw;
+      min-width: 100vw;
+      z-index:-1;
+    }
+    .lava{
+      filter: url("#goo");
+      position:absolute;
+      height:100%;
+      width:50%;
+      top:0;
+      right:0;
+    }
+    .blob{
+      border-radius: 50%;
+      background: #f7f7f7;
+      position:absolute;
+    }
+
+    .blob:nth-child(1){
+      width: 200px;
+      height: 200px;
+      left: 35%;
+      bottom:-15%;
+     
+      animation: wobble 4s ease-in-out alternate infinite, blob-one ease-in-out 13s infinite;
+    }
+    .blob:nth-child(2){
+      width: 330px;
+      height: 330px;
+      right: 24%;
+      bottom:-65%;
+      
+      animation: wobble 5s ease-in-out alternate infinite, blob-two ease-in-out 22s infinite;
+    }
+    .blob:nth-child(3){
+      width: 150px;
+      height: 150px;
+      bottom:-15%;
+      left: 34%;
+      
+      animation: wobble 6s ease-in-out alternate infinite, blob-three ease-in-out 16s infinite;
+    }
+    .blob:nth-child(4){
+      width: 235px;
+      height: 235px;
+      bottom:-19%;
+      left: 30%;
+      
+      animation: wobble 7s ease-in-out alternate infinite, blob-four ease-in-out 12s infinite;
+    }
+    .blob:nth-child(4){
+      width: 235px;
+      height: 235px;
+      bottom:-19%;
+      left: 30%;
+      animation: wobble 8s ease-in-out alternate infinite, blob-four ease-in-out 12s infinite;
+    }
+    .blob:nth-child(5){
+       width: 55px;
+      height: 55px;
+      bottom:-25%;
+      left: 34%;
+      
+      animation: wobble 9s ease-in-out alternate infinite, blob-five ease-in-out 32s infinite;
+    }
+    .blob:nth-child(6){
+      width: 35px;
+      height: 35px;
+      bottom:-25%;
+      right: 34%;
+      
+      animation:wobble 10s ease-in-out alternate infinite,  blob-six ease-in-out 12s infinite;
+    }
+    .blob:nth-child(7){
+      width: 435px;
+      height: 435px;
+      bottom:-85%;
+      right: 40%;
+      
+      animation: wobble 11s ease-in-out alternate infinite, blob-seven ease-in-out 40s infinite;
+    }
+
+        @keyframes blob-one{
+          0%, 100%{
+            transform: translatey(0);
+          }
+          50%{
+            transform: translatey(-700%);
+          }
+        }
+        @keyframes blob-two{
+          0%, 100%{
+            transform: translatey(0);
+          }
+          50%{
+            transform: translatey(-420%);
+          }
+        }
+        @keyframes blob-three{
+          0%, 100%{
+            transform: translatey(0);
+          }
+          50%{
+            transform: translatey(-305%);
+          }
+        }
+        @keyframes blob-four{
+          0%, 100%{
+            transform: translatey(0);
+          }
+          50%{
+            transform: translatey(-605%);
+          }
+        }
+        @keyframes blob-five{
+          0%, 100%{
+            transform: translatey(0);
+          }
+          50%{
+             transform: translatey(-700%);
+          }
+        }
+        @keyframes blob-six{
+          0%, 100%{
+            transform: translatey(0);
+          }
+          50%{
+             transform: translatey(-700%);
+          }
+        }
+        @keyframes blob-seven{
+          0%, 100%{
+            transform: translatey(0);
+          }
+          50%{
+             transform: translatey(-300%);
+          }
+        }
+        @keyframes wobble {
+          50% {
+           border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+          }
+          100% {
+           border-radius: 38% 52% 75% 36% / 50% 40% 50% 60%;
+          }
+        }
 }
 
 .about-text {
