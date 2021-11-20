@@ -13,6 +13,7 @@
 ::selection {
     background-color: #00F6A1;
     color: #12121A;
+    border-radius: 10px;
 }
  
 ::-moz-selection {
@@ -49,6 +50,17 @@
   }
 }
 
+
+.mouse {
+      position: absolute;
+      bottom: 40px;
+      z-index: 5;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      display: block; 
+  }
 
 
 .iframe-video{

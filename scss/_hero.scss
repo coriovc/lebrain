@@ -1,4 +1,45 @@
 /* :: Hero */
+.welcome-area{
+        .Down {
+          position: absolute;
+          bottom:4rem;
+          z-index: 5;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+          display: block; 
+          -webkit-animation: mover-down 0.5s infinite  alternate;
+          animation: mover-down 0.5s infinite  alternate;
+
+          span{
+            font-size: 50px;
+            color: #000;
+            font-weight: 100;
+            -webkit-animation: mover-down 2s infinite  alternate;
+            animation: mover-down 2s infinite  alternate;
+          }
+
+
+          @-webkit-keyframes mover-down {
+                0% { transform: translateY(0); }
+                100% { transform: translateY(-10px); }
+          }
+          @keyframes mover-down {
+                0% { transform: translateY(0); }
+                100% { transform: translateY(-10px); }
+          }
+
+
+        &:hover{
+            span{
+
+            }
+        }
+      }
+}
+
+
 .hero-section {
     position: relative;
     width: 100%;
@@ -46,9 +87,6 @@
     }
 }
 
-
-
-
 .welcome-text {
         position: relative;
         z-index: 1;
@@ -93,7 +131,7 @@
             height: 22%;
             left: -2%;
             position: absolute;
-            top: 27%;
+            top: 35%;
             user-select: none;
             width: 38%;
             z-index: -1;

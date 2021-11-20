@@ -1,5 +1,57 @@
 /* :: landings */
 
+.btn-back{
+        position: absolute;
+        top: 10rem;
+        left: 6rem;
+        z-index: 2000;
+
+        a{
+            font-size: 25px;
+            font-weight: 700;
+            color: #121212;
+            margin-left: 1.5rem;
+            @media #{$breakpoint-xs} {
+                margin-left: 0;
+            }
+
+            span{
+                position: absolute;
+                font-size: 50px;
+                color: $primary;
+                margin-top: 9px;
+                margin-left: -6.5rem;
+                transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+            }
+        }
+
+        a:before {
+              content: "";
+              position: absolute;
+              background: #00F6A1;
+              width: 71px;
+              height: 19px;                
+              top: 2%;
+              left: 43px;
+              border-radius: 25px;
+              transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+              z-index: -1;
+              @media #{$breakpoint-xs} {
+                height: 13px;
+                top: 79%;
+              }
+        }
+
+        a:hover:before {              
+              left: 60px;
+        }
+
+        a:hover{
+            span{
+                margin-left: -7.5rem;
+            }
+        }
+}
 
 .landing-area-full {
     position: relative;
@@ -47,12 +99,11 @@
     }
 }
 
-
 .landing-hero{
     position: relative;
     z-index: 0;
     text-align: center;
-    padding: 13rem 0 3rem 0;   
+    padding: 16rem 0 3rem 0;   
 
     img{
     	width: 95%
@@ -71,12 +122,65 @@
     user-select: none; 
 
     img{
-    	width: 95%
+    	width: 95%;
+
+        &.credi{
+            width: 50%;
+            margin: 6rem 0;
+        }
+
+        &.buen{
+
+        }
     }
 
     @media #{$breakpoint-xs} {
             
     }
+}
+
+.content-title {
+            width: 82%;
+            margin-left: auto;
+            margin-right: auto;
+            @media #{$breakpoint-xs} {
+               
+
+            }
+
+            h3 {
+                font-size: 20px;
+                margin-bottom: 30px;
+                color: $dark;
+                font-weight: 300;
+                line-height: 1;   
+
+                &.title{
+                    font-size: 20px;
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        background: #121212;
+                        width: 41px;
+                        height: 3px;
+                        border-radius: 50rem;
+                        margin-top: 1.5rem;
+                        transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+                        z-index: -1;
+
+
+                        @media #{$breakpoint-xs} {
+                            
+
+                        }
+                    }
+                }
+
+                @media #{$breakpoint-xs} {
+                    font-size: 50px;
+                    padding-top: 80px;
+                }
+            }
 }
 
 .landing-img-pro{
@@ -88,18 +192,31 @@
 
     img{
         width: 95%;
+        z-index: -1;
 
         &.small{
             width: 60%;
         }
+        &.cre-a{
+            width: 80%;
+        }
+        &.cre-b{
+            width: 90%;
+        }
     }
 
     &.a{
-        padding: 2rem 0 0 0; 
+        padding: 2rem 0 0 0;
+        z-index: -1; 
     }
 
     &.b{
-        padding: 0 0 3rem 0; 
+        padding: 0 0 3rem 0;  
+        z-index: -1;
+
+        &.credi{
+            margin-top: -5rem;
+        }
     }
 
     &.color{
@@ -145,7 +262,6 @@
             
     }
 }
-
 
 .landing-area {
     position: relative;
@@ -294,7 +410,7 @@
                 }
             }
             h3 {
-                font-size: 26px;
+                font-size: 20px;
                 margin-bottom: 10px;
                 color: $dark;
                 font-weight: 300;
@@ -404,7 +520,6 @@
     	}
 
     }
-
 }
 
 .landing-text {
@@ -503,9 +618,6 @@
                 }
         }
 }
-
-
-
 
 .contact-heading{
 

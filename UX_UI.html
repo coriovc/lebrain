@@ -68,16 +68,12 @@
         </div>
       </div>
     </header>
-
-    <hr class="line-hero">
-
     <!-- ***** contact Area Start ***** -->
     <section class="ux-ui-area">
       <div class="container"> 
 
         <div class="text-hero">
-            <h2>UX UI Design</h2>
-            <img src="img/core-img/ux-icon.svg" alt="icon" class="icon">
+            <img src="img/core-img/ux-icon.svg" alt="icon" class="icon"><h2>UX UI Design</h2>            
         </div>
         <div class="l-content">
             <h3 data-aos="fade-up">Our UI/UX team designs engaging and <strong>simple-to-use</strong> user interfaces for mobile apps and web products.</h3>
@@ -89,24 +85,35 @@
                 <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-delay="100">
                   <a href="#" class="card">
                     <img src="img/core-img/ux-ui.png" alt="proyect" class="img-proyect">    
-                  </a>
+                  </a>                  
+                  <div class="title">
+                    <h2>Crediminuto</h2>
+                    <span>Finthech</span>
+                  </div>
                 </div> 
                 <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-delay="300">
                   <a href="#" class="card">
                     <img src="img/core-img/ux-ui.png" alt="proyect" class="img-proyect">    
-                  </a>
+                  </a>                  
+                  <div class="title">
+                    <h2>Crediminuto</h2>
+                    <span>Finthech</span>
+                  </div>
                 </div>
                 <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-delay="500">
                   <a href="#" class="card">
                     <img src="img/core-img/ux-ui.png" alt="proyect" class="img-proyect">    
-                  </a>
+                  </a>                  
+                  <div class="title">
+                    <h2>Crediminuto</h2>
+                    <span>Finthech</span>
+                  </div>
                 </div>                
           </div>
         </div>
       </div>
     </section>
     <!-- ***** contact Area End ***** -->
-
     <!-- ***** Sec-footer Area Start ***** -->
     <section class="sec-footer-area">
         <div class="container">
@@ -127,7 +134,7 @@
     <hr class="line-footer">
 
     <!-- ***** Footer Area Start ***** -->
-    <footer class="footer-area" data-aos="fade-up" data-aos-offset="0" data-aos-delay="100">
+    <footer class="footer-area">
         <div class="container">
             <div class="row">
                 <!-- Single Footer Widget -->
@@ -148,32 +155,9 @@
                   </div>
                 </div>
 
+                
                 <!-- Single Footer Widget -->
-                <div class="col-5 col-lg-3">
-                  <div class="single-footer-widget">
-                    <!-- Nav -->
-                    <nav>
-                        <ul class="our-link">
-                          <li class="footer"><span class="material-icons-round">chevron_right</span>
-                                <a href="#">Work</a></li>
-                          <li class="footer"><span class="material-icons-round">chevron_right</span>
-                                <a href="About.html">About us</a></li>
-                          <li class="footer"><span class="material-icons-round">chevron_right</span>
-                                <a href="#">About you</a></li>
-                        </ul>
-                    </nav>
-                  </div>
-                </div>
-
-                <div class="col-6  d-inline-flex d-xl-none">
-                  <div class="single-footer-widget"><nav>
-                        <ul class="our-link">
-                          <li class="footer-contact "><a href="Contact.html">Contact us<span class="material-icons-round">arrow_forward</span></a></li>
-                        </ul></nav>
-                  </div>
-                </div>
-                <!-- Single Footer Widget -->
-                <div class="col-12 col-lg-5 m-foo d-none d-xl-inline-flex">
+                <div class="col-12 col-lg-5 m-foo-normal d-none d-xl-inline-flex">
                   <div class="single-footer-widget">
                     <!-- Nav -->
                     <nav>
@@ -181,7 +165,6 @@
                           <li class="footer-icon"><a href="https://www.instagram.com/lebrainage"><span class="icon-instagram iconso-"></span></a></li>
                           <li class="footer-icon"><a href="https://twitter.com/LeBrainAge"><span class="icon-twitter iconso-"></span></a></li>
                           <li class="footer-icon"><a href="https://www.linkedin.com/company/lebrain-agency"><span class="icon-linkedin iconso-"></span></a></li>
-                          <li class="footer-contact"><a href="Contact.html">Contact us<span class="material-icons-round">arrow_forward</span></a></li>
                         </ul>
                     </nav>
                   </div>
@@ -190,7 +173,6 @@
         </div>
     </footer>
     <!-- ***** Footer Area End ***** -->
-
 
     <!-- ******* All JS Files ******* -->
     <!-- jQuery js -->
@@ -216,7 +198,8 @@
     AOS.init({
         easing: 'ease-in-out-back',
         offset: 0,
-        duration: 1000
+        duration: 1000,
+        once: true
       });
   </script>
 </body>

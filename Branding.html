@@ -69,23 +69,17 @@
       </div>
     </header>
 
-    <hr class="line-hero">
-
     <!-- ***** contact Area Start ***** -->
     <section class="branding-area">
       <div class="container"> 
 
         <div class="text-hero">
-            <h2>Branding</h2>
-            <img src="img/core-img/brandign-icon.svg" alt="icon" class="icon">
-        </div>
+              <img src="img/core-img/brandign-icon.svg" alt="icon" class="icon"><h2>Branding</h2>            
+          </div>
         <div class="l-content">
             <h3 data-aos="fade-up" data-aos-delay="200">Brand architecture and corporate identity is <strong>the kick start</strong> of any digital business.</h3>
-            <p data-aos="fade-up" data-aos-delay="400">Brand architecture and corporate identity is the kick start of any digital business. We cannot think of developing any element without first having the brand well defined. Our challenge is to achieve that brand’s identity and keep it relevant over time.</p>
+            <p data-aos="fade-up" data-aos-delay="400">We cannot think of developing any element without first having the brand well defined. Our challenge is to achieve that brand’s identity and keep it relevant over time.</p>
         </div>
-        <div data-aos="fade-up" data-aos-delay="400" class="a-link">
-          <a href="#"><span class="material-icons-round">expand_more</span><h2>What we do</h2></a>
-        </div> 
         <div class="brands">
           <div class="row align-items-center justify-content-center">
                 <!-- landing Content -->
@@ -93,16 +87,28 @@
                   <a href="#" class="card">
                     <img src="img/core-img/brand-1.png" alt="brand" class="img-brand">    
                   </a>
+                  <div class="title">
+                    <h2>Facultec</h2>
+                    <span>Finthech</span>
+                  </div>
                 </div> 
                 <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-delay="300">
                   <a href="#" class="card">
                     <img src="img/core-img/brand-2.png" alt="brand" class="img-brand">    
                   </a>
+                  <div class="title">
+                    <h2>Buen Dolar</h2>
+                    <span>Finthech</span>
+                  </div>
                 </div>
                 <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-delay="600">
                   <a href="#" class="card">
                     <img src="img/core-img/brand-3.png" alt="brand" class="img-brand">    
                   </a>
+                  <div class="title">
+                    <h2>Bitera</h2>
+                    <span>Finthech</span>
+                  </div>
                 </div>                
           </div>
         </div>
@@ -130,7 +136,7 @@
     <hr class="line-footer">
 
     <!-- ***** Footer Area Start ***** -->
-    <footer class="footer-area" data-aos="fade-up" data-aos-offset="0" data-aos-delay="100">
+    <footer class="footer-area">
         <div class="container">
             <div class="row">
                 <!-- Single Footer Widget -->
@@ -151,32 +157,9 @@
                   </div>
                 </div>
 
+                
                 <!-- Single Footer Widget -->
-                <div class="col-5 col-lg-3">
-                  <div class="single-footer-widget">
-                    <!-- Nav -->
-                    <nav>
-                        <ul class="our-link">
-                          <li class="footer"><span class="material-icons-round">chevron_right</span>
-                                <a href="#">Work</a></li>
-                          <li class="footer"><span class="material-icons-round">chevron_right</span>
-                                <a href="About.html">About us</a></li>
-                          <li class="footer"><span class="material-icons-round">chevron_right</span>
-                                <a href="#">About you</a></li>
-                        </ul>
-                    </nav>
-                  </div>
-                </div>
-
-                <div class="col-6  d-inline-flex d-xl-none">
-                  <div class="single-footer-widget"><nav>
-                        <ul class="our-link">
-                          <li class="footer-contact "><a href="Contact.html">Contact us<span class="material-icons-round">arrow_forward</span></a></li>
-                        </ul></nav>
-                  </div>
-                </div>
-                <!-- Single Footer Widget -->
-                <div class="col-12 col-lg-5 m-foo d-none d-xl-inline-flex">
+                <div class="col-12 col-lg-5 m-foo-normal d-none d-xl-inline-flex">
                   <div class="single-footer-widget">
                     <!-- Nav -->
                     <nav>
@@ -184,7 +167,6 @@
                           <li class="footer-icon"><a href="https://www.instagram.com/lebrainage"><span class="icon-instagram iconso-"></span></a></li>
                           <li class="footer-icon"><a href="https://twitter.com/LeBrainAge"><span class="icon-twitter iconso-"></span></a></li>
                           <li class="footer-icon"><a href="https://www.linkedin.com/company/lebrain-agency"><span class="icon-linkedin iconso-"></span></a></li>
-                          <li class="footer-contact"><a href="Contact.html">Contact us<span class="material-icons-round">arrow_forward</span></a></li>
                         </ul>
                     </nav>
                   </div>
@@ -193,7 +175,6 @@
         </div>
     </footer>
     <!-- ***** Footer Area End ***** -->
-
 
     <!-- ******* All JS Files ******* -->
     <!-- jQuery js -->
@@ -219,7 +200,8 @@
     AOS.init({
         easing: 'ease-in-out-back',
         offset: 0,
-        duration: 1000
+        duration: 1000,
+        once: true
       });
   </script>
 </body>
