@@ -68,6 +68,10 @@
     z-index: 0;
     padding: 15rem 0 5rem 0;
 
+    &.you{
+        padding: 15rem 0 2rem 0;
+    }
+
     @media #{$breakpoint-xs} {
         padding: 7rem 2rem 2rem 2rem;
     }
@@ -125,7 +129,16 @@
                 width: 100%;
                 margin-bottom: 40px;            
             }
+        &.you{
+            margin-top: 5rem;
+            width: 60%;
 
+            .mar-t-4{
+                margin-top: 4rem;
+            }
+        }
+
+            
         h2 {
             font-size: 35px;
             font-weight: 400;

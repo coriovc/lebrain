@@ -4,10 +4,10 @@
         position: absolute;
         top: 10rem;
         left: 6rem;
-        z-index: 2000;
+        z-index: 2;
 
         a{
-            font-size: 25px;
+            font-size: 20px;
             font-weight: 700;
             color: #121212;
             margin-left: 1.5rem;
@@ -17,10 +17,10 @@
 
             span{
                 position: absolute;
-                font-size: 50px;
+                font-size: 35px;
                 color: $primary;
                 margin-top: 9px;
-                margin-left: -6.5rem;
+                margin-left: -5rem;
                 transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
             }
         }
@@ -29,10 +29,10 @@
               content: "";
               position: absolute;
               background: #00F6A1;
-              width: 71px;
-              height: 19px;                
+              width: 45px;
+              height: 15px;                
               top: 2%;
-              left: 43px;
+              left: 51px;
               border-radius: 25px;
               transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
               z-index: -1;
@@ -48,7 +48,7 @@
 
         a:hover{
             span{
-                margin-left: -7.5rem;
+                margin-left: -6rem;
             }
         }
 }
@@ -143,6 +143,14 @@
             width: 82%;
             margin-left: auto;
             margin-right: auto;
+
+            &.credi{
+                margin-top: 14rem;
+            }
+
+            &.alca{
+                margin-top: 6rem;
+            }
             @media #{$breakpoint-xs} {
                
 
@@ -166,7 +174,7 @@
                         border-radius: 50rem;
                         margin-top: 1.5rem;
                         transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-                        z-index: -1;
+                        z-index: 1;
 
 
                         @media #{$breakpoint-xs} {
@@ -203,11 +211,45 @@
         &.cre-b{
             width: 90%;
         }
+
+        &.buen{
+            width: 27%;
+        }
+
+        &.buen2{
+            width: 120%;
+            margin-left: -24rem;
+            max-width: 200%;
+        }
+    }
+
+    &.brand-a{
+        padding: 2rem 0 1rem 0;
+        z-index: 0; 
+    }
+    &.brand-b{
+        padding: 1rem 0 2rem 0;
+        z-index: 0; 
+    }
+
+    &.brand-b1{
+        margin-top: -10rem;
+        z-index: -1; 
     }
 
     &.a{
         padding: 2rem 0 0 0;
         z-index: -1; 
+    }
+
+    &.buen{
+        padding: 0;
+        z-index: 0;
+        position: absolute;
+        right: 0;
+        text-align: right;
+        margin-top: -6rem;
+        margin-right: 8rem;
     }
 
     &.b{
@@ -216,6 +258,11 @@
 
         &.credi{
             margin-top: -5rem;
+            padding: 0;
+        }
+        &.credi2{
+                margin-top: -16rem;
+                padding-bottom: 6px;
         }
     }
 
@@ -263,6 +310,52 @@
     }
 }
 
+.contendor-img{
+    user-select: none; 
+    display: inline-flex;
+
+    .cont-img {
+        padding: 0;
+        z-index: -1; 
+        width: 32.5%;
+        margin: 0 3px;
+
+        &.a{
+            width: 32.5%;
+        }
+        &.b{
+            width: 26.6%; 
+        }
+        &.c{
+            width: 33.5%;
+        }
+    }
+
+}
+.contendor-img-buen{
+    user-select: none; 
+    display: inline-flex;
+
+    .cont-img {
+        padding: 0;
+        z-index: -1; 
+        width: 32.5%;
+        margin: 0 3px;
+
+        &.a{
+            width: 45%;
+        }
+        &.b{
+            width: 32%; 
+        }
+    }
+
+    .content-img{
+    display: block;
+    }
+
+}
+
 .landing-area {
     position: relative;
     z-index: 0;
@@ -272,6 +365,11 @@
         padding: 7rem 2rem 2rem 2rem;
     }
 
+
+    &.brand{
+        padding: 16rem 0 2rem 0;
+    }
+
     .content-container{
     	width: 81%;
 		margin-left: auto;
@@ -279,6 +377,10 @@
     }
 
     .content-text {
+
+            &.flam{
+                width: 70%;
+            }
             @media #{$breakpoint-xs} {
                
 
@@ -296,6 +398,28 @@
                 @media #{$breakpoint-xs} {
                     font-size: 50px;
                     padding-top: 80px;
+                }
+
+
+                &.brand{
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        background: #121212;
+                        width: 36px;
+                        height: 4px;
+                        border-radius: 50rem;
+                        top: 2.5rem;
+                        left: 1rem;
+                        transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+                        z-index: -1;
+
+
+                        @media #{$breakpoint-xs} {
+                            
+
+                        }
+                    }
                 }
             }
             h3 {
@@ -374,7 +498,12 @@
             }
             
 
-           ul {
+            ul {
+
+                &.our-link{
+                        margin-left: auto;
+                        width: 85%;
+                }
                 
                 li{
                 	font-size: 16px;
@@ -386,8 +515,52 @@
 	                @media #{$breakpoint-xs} {
 	                    
 	                }
+
+                    span{
+                        font-size: 16px;
+                    }
+
+                    &.brand {    
+                        margin-bottom: 0.5rem;
+                        display:flex;
+                        line-height: 1.5;
+
+                        span{
+                            color: $primary;
+                            position: absolute;
+                            transition: all 0.3s ease;
+                        }
+
+                        a {
+                            position: relative;
+                            z-index: 1;
+                            font-size: 16px;
+                            color: #A5A5A5;
+                            font-weight: normal;
+                            text-decoration: none;
+                            width: 55%;
+                            position: relative;
+                            display: inline-block;
+                            margin-left: 1.5rem;
+                            
+
+                            @media #{$breakpoint-xs} {
+                                width: auto;
+                                font-size: 19px;
+                            }
+                        }
+
+                        a:hover{
+
+                            span{
+                                margin-left: 5px;
+                            }
+                            
+                        }
+                    }
                 }
             }
+            
 
     }
 
@@ -617,53 +790,6 @@
                     margin-top:10px;
                 }
         }
-}
-
-.contact-heading{
-
-	h5{
-		color:$c-gray;
-	}
-	
-	span{
-		margin-top: 1.4%;
-    	margin-left: 1rem;
-
-    	&.line{
-		    position: absolute;
-		    height: 3px;
-		    background-color: $primary;
-		    width: 40px;
-		    border-radius: 20%;
-		}
-
-		&.c{
-			margin-top: 2.1%;
-   			margin-left: 1rem;
-		}
-
-		&.p{
-			margin-top: 0.5rem;
-  			margin-left: 1rem;
-		}
-
-		&.b{
-			margin-top: 0.4rem;
-    		margin-left: 1rem;
-		}
-
-		&.ag{
-			margin-top: 0.55rem;
-    		margin-left: 1rem;
-		}
-
-		&.a{
-			margin-top: 0.5rem;
-  			margin-left: 0.9rem;
-		}
-
-	}
-
 }
 
 
