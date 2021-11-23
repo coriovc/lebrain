@@ -12,6 +12,10 @@
           -webkit-animation: mover-down 0.5s infinite  alternate;
           animation: mover-down 0.5s infinite  alternate;
 
+          @media #{$breakpoint-xs} {
+                left: 45%;
+            }
+
           span{
             font-size: 50px;
             color: #000;
@@ -137,8 +141,8 @@
             z-index: -1;
 
             @media #{$breakpoint-xs} {
-                    height: 14%;
-                    top: 20%;
+                    height: 18%;
+                    top: 23%;
                     width: 67%;
             }
         }

@@ -66,6 +66,11 @@
     .m-foo{
         margin-left: 7rem;
         margin-right: -7rem;
+
+        @media #{$breakpoint-xs} {
+            margin: 0;
+            text-align: center;
+        } 
     }
     
     .m-foo-normal{
@@ -148,6 +153,14 @@
     .our-link {
         position: relative;
         z-index: 1;
+
+        @media #{$breakpoint-xs} {
+            margin-top: 1rem;
+            justify-content: center;
+        }
+
+        margin-top: 1rem;
+        justify-content: center;
 
         li {    
 
