@@ -1,5 +1,6 @@
 $( document ).ready( function () {
     var $successMsg = $(".contact-Thakns");
+    var $successMsgo = $(".send");
       $( "#contact_form" ).validate( {
         rules: {
           name: "required",
@@ -21,7 +22,9 @@ $( document ).ready( function () {
           },
         errorElement: "span",
         submitHandler: function(form) {          
-          $successMsg.addClass('show');
+          $successMsg.addClass('active');
+          $successMsgo.addClass('active');
+          sleep(4);
           $(form).ajaxSubmit();  
         },
         errorPlacement: function ( error, element ) {

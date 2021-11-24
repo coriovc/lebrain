@@ -23,6 +23,6 @@ $para = 'info@lebrain.com';
 $asunto = 'Contacto lebrain ';
 
 mail($para, $asunto, utf8_decode($message), $header);
-sleep(7);
+sleep(4);
 header("Location:" . $_SERVER['HTTP_REFERER']);
 ?>

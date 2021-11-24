@@ -377,6 +377,11 @@
 
     &.brand{
         padding: 16rem 0 2rem 0;
+
+        @media #{$breakpoint-xs} {
+        padding:12rem 0 2rem 0;
+        }
+
     }
 
     .content-container{
@@ -392,11 +397,11 @@
 
             &.flam{
                 width: 70%;
+                @media #{$breakpoint-xs} {
+                width: 100%;
+                }
             }
-            @media #{$breakpoint-xs} {
-               
-
-            }
+            
 
             h2 {
                 font-size: 38px;
@@ -427,7 +432,7 @@
 
 
                         @media #{$breakpoint-xs} {
-                            
+                            top: 3.5rem;
 
                         }
                     }
@@ -505,6 +510,14 @@
                   margin-top: 4rem;  
                 }
 
+                &.primer-brand{
+                  margin-top: 4rem;  
+                    @media #{$breakpoint-xs} {
+                        margin-top: 0;
+                    }
+                }
+
+
                  @media #{$breakpoint-xs} {
                         margin-left: 0;
                         width: 100%;
@@ -517,6 +530,9 @@
                 &.our-link{
                         margin-left: auto;
                         width: 85%;
+                    @media #{$breakpoint-xs} {
+                        width: 100%;
+                    }
                 }
                 
                 li{

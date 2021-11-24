@@ -74,12 +74,17 @@
     <section class="contact-area">
       <div class="container"> 
 
-        <div class="text-hero">
+        <div class="text-hero send">
             <h2 data-aos="fade-left" data-aos-offset="0">Let’s start a project together!</h2>
             <img data-aos="fade-left" data-aos-offset="0" data-aos-delay="200" src="img/core-img/underline-contact.svg" alt="Line" class="highlighted__line">
-        </div>         
-          
-        <div class="row justify-content-center contact-text">                
+        </div>
+
+        <div class="text-hero contact-Thakns">
+            <h2 data-aos="fade-left" data-aos-offset="0">You are amazing!</h2>
+            <img data-aos="fade-left" data-aos-offset="0" data-aos-delay="200" src="img/core-img/underline-contact.svg" alt="Line" class="highlighted__line thakns">
+            <p>Thank you for filling out our form! We will be contacting you shortly</p>
+        </div> 
+        <div class="row justify-content-center contact-text send">                
           <form id="contact_form" action="php/send.php" method="post">
           <!-- Contact Form -->
           <div class="col-12" data-aos="fade-up" data-aos-offset="0" data-aos-delay="300">           
@@ -156,12 +161,8 @@
                     <div class="col-12 ">
                         <button type="submit" class="send">Send now<span class="material-icons-round">arrow_forward</span></button>
                     </div>
-                </div>
-            
-              <div class="contact-Thakns ">
-                            <h2 key="gracias">Thank you very much!</h2>
-                            <p key="parrafo-gra">The form was sent successfully, In the near future we will contact.</p>
-              </div>                        
+                </div>           
+                                     
             </div>
           </div>
           </form>            
@@ -241,7 +242,8 @@
     AOS.init({
         easing: 'ease-in-out-back',
         offset: 0,
-        duration: 1000
+        duration: 1000,
+        once: true
       });
   </script>
   </body>
