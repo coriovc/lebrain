@@ -692,86 +692,19 @@
         padding: 2rem 2rem;
     }
 
+
+
     .container{
         padding: 0;
 
-        .proyect-hidden{
-            opacity: 0;
-            height: 0;
-            transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-        }
-        .proyect-hidden-1{
-            opacity: 0;
-            height: 0;
-            transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-        }
-        .proyect-hidden-2{
-            opacity: 0;
-            height: 0;
-            transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-        }
-        .proyect-hidden-3{
-            opacity: 0;
-            height: 0;
-            transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-        }
-        .proyect-hidden-4{
-            opacity: 0;
-            height: 0;
-            transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-        }
-
-        .proyect-visible{
-            opacity: 1;
-            height: auto;
-            transition: all 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
-        }
     }
 
-    .more-p{
-        position: absolute;
-        bottom: -2rem;
-        width: 100%;
-        display: block;
-        text-align: center;
-        z-index: 200;
-
-        &.cli-4{
-            img{
-                transform: rotate(45deg);
-            }
-        }
-
-        img{
-            cursor: pointer;
-            border-radius: 25rem;
-            transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-
-            &:hover{
-                box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-                    transform: scale(1.05);
-
-            }
-        }
-        
-        @media #{$breakpoint-xs} {
-            bottom: -2rem;
-            z-index: 2000;
-            width: 85%;
-        }
-
-        &.cli-hidden{
-            display: none;
-        }
-
-        &.cli-block{
-            display: block;
-        }   
-
+    .section-l{
+        padding: 3rem 0 0 0 ;
     }
 
     .title{
-            width: 350px;
+            width: 450px;
             margin-top: 2rem;
             margin-left: auto;
             margin-right: auto;
@@ -795,8 +728,8 @@
             background: none;
             overflow: hidden;
             border-radius: 0;
-            width: 350px;
-            height: 450px;
+            width: 450px;
+            height: 580px;
             margin-left: auto;
             margin-right: auto;    
             @media #{$breakpoint-xs} {

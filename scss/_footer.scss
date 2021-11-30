@@ -262,7 +262,7 @@
                 a{
                     
                     color: $primary;
-                    font-size: 35px;
+                    font-size: 30px;
 
                     @media #{$breakpoint-xs} {
                         font-size: 28px;
@@ -271,10 +271,10 @@
 
                     span{
                         position: absolute;
-                        font-size: 73px;
+                        font-size: 57px;
                         color: $primary;
-                        margin-top: 2rem;
-                        margin-left: -2rem;
+                        margin-top: 12px;
+                        margin-left: -30px;
                         transition: all 0.3s ease;
                         @media #{$breakpoint-xs} {
                             margin-top: 1rem;

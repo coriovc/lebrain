@@ -14,6 +14,7 @@
     }
 
     .container{
+        max-width: 82%;
 
         @media #{$breakpoint-xs} {
                 padding: 2rem;
@@ -75,6 +76,10 @@
         }
     }
 
+    .container{
+        max-width: 82%;
+    }
+
     @media #{$breakpoint-xs} {
         padding: 7rem 2rem 2rem 2rem;
     }
@@ -106,9 +111,9 @@
 
             .highlighted__line {                
                 height: 7%;
-                left: 31%;
+                left: 28%;
                 position: absolute;
-                top: 31%;
+                top: 33.5%;
                 user-select: none;
                 width: 20.5%;
                 z-index: -1;
@@ -125,8 +130,8 @@
     .l-content {
         position: relative;
         z-index: 1;
-        width: 66%;
-        margin-top: 9rem;
+        width: 68%;
+        margin-top: 5rem;
 
             @media #{$breakpoint-xs} {
                 width: 100%;
@@ -134,7 +139,7 @@
             }
         &.you{
             margin-top: 5rem;
-            width: 60%;
+            width: 56%;
 
             @media #{$breakpoint-xs} {
                 width: 100%;                           
@@ -148,7 +153,7 @@
             
         h2 {
             font-size: 35px;
-            font-weight: 400;
+            font-weight: 600;
             margin-bottom: 1.5rem;
             color: $dark;        
 
@@ -171,9 +176,13 @@
         p {
             margin-bottom: 0;
             line-height: 1.5;
-            margin-right: 1rem;
+            margin-right: 6rem;
             font-size:18px;
             margin-bottom: 1rem;
+
+            &.you{
+              margin-right: 0;  
+            }
 
             @media #{$breakpoint-xs} {
                 font-size: 19px;
@@ -645,6 +654,9 @@
                             left: 6.5rem;
                             transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
                             z-index: -1;
+                            @media #{$breakpoint-xs} {                    
+                                top: 17.6rem;
+                            }
                     }
 
                     .line-2{
@@ -658,6 +670,9 @@
                             left: 6.5rem;
                             transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
                             z-index: -1;
+                            @media #{$breakpoint-xs} {                    
+                                top: 17.6rem;
+                            }
                     }
 
 
@@ -677,7 +692,10 @@
             background: #ddd;
 
             @media #{$breakpoint-xs} {                    
-                margin: 1rem 0 1rem 0;
+                margin: 1rem auto 1rem auto;
+                width: 250px;
+                height: 250px;
+
             }
 
             &.circle {
@@ -763,8 +781,8 @@
     .l-content {
         position: relative;
         z-index: 1;
-        width: 66%;
-        margin-left: 8rem;
+        width: 60%;
+        margin-left: -3rem;
         margin-bottom: 4rem;
 
             @media #{$breakpoint-xs} {
@@ -793,11 +811,11 @@
               content: "";
               position: absolute;
               background: #00F6A1;
-              width: 153px;
-              height: 46px;
+              width: 122px;
+              height: 29px;
               border-radius: 25px;
-              top: 22%;
-              left: -6%;
+              top: 54%;
+              left: -3%;
               transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
               z-index: -1;
             

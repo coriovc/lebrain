@@ -796,21 +796,6 @@
     }
 }
 
-.classynav ul li.has-down > a::after,
-.classynav ul li.has-down.active > a::after,
-.classynav ul li.megamenu-item > a::after {
-    color: $heading;
-}
-
-.breakpoint-off .classynav ul li .dropdown {
-    width: 210px;
-    @include box-shadow($box-shadow);
-    border-radius: 6px;
-}
-
-
-
-
 .menu-icon-social{
     text-align: center;
     padding: 1rem 0;
@@ -952,14 +937,14 @@
         position: fixed;
         z-index: 100;
         right: 100px;
-        top: 18px;
+        top: 20px;
         cursor: pointer;
         opacity: 1;
         transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 
         h2{
             font-family: 'Nunito', sans-serif;
-            font-size: 25px;
+            font-size: 22px;
             color: #000;
         }
 
@@ -975,7 +960,7 @@
         position: fixed;
         z-index: 205;
         right: 100px;
-        top: 16px;
+        top: 15px;
         cursor: pointer;
         display: inline-block;
           transition-delay: 0.8s;
@@ -985,7 +970,7 @@
 
         h2{
             font-family: 'Nunito', sans-serif;
-            font-size: 25px;
+            font-size: 22px;
             color: #000;
         }
         @media #{$breakpoint-xs} {
@@ -1032,7 +1017,7 @@
 .nav__content {
   position: fixed;
   visibility: hidden;
-  top: 19%;
+  top: 17%;
   transform: translate(0%, -50%);
   width: 100%;
   text-align: left;

@@ -1,0 +1,40 @@
+section img {
+  position: absolute;
+}
+.percentage {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  border: 5px solid lightgray;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.pcside{
+  transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.pcfront{
+  transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+#PC1{
+  transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+#PC2{
+  transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+#PC3{
+  transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+#PC4{
+  transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
