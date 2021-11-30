@@ -61,6 +61,7 @@
 
             @media #{$breakpoint-xs} {
                 width: 80%;
+                margin-left: 0;
 
             }
 
@@ -87,9 +88,9 @@
                 z-index: -1;
 
                 @media #{$breakpoint-xs} {
-                    height: 42px;
+                    height: 47px;
                     left: 8%;
-                    top: 28%;
+                    top: 243px;
                     width: 58%;
 
                 }
@@ -103,6 +104,10 @@
 
     .proyect{
         margin-top: 8rem;
+
+        @media #{$breakpoint-xs} {
+          margin-top: 3rem;  
+        }
 
         .title{
             width: 350px;

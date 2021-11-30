@@ -78,6 +78,9 @@
 
     .container{
         max-width: 82%;
+        @media #{$breakpoint-xs} {
+        max-width: 100%;
+        }
     }
 
     @media #{$breakpoint-xs} {
