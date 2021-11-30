@@ -770,7 +770,7 @@ textarea:focus, input:focus { outline: none; }
 .footer-area .movil { text-align: left; }
 @media only screen and (max-width: 767px) { .footer-area .movil { text-align: center; justify-content: center; margin-bottom: 1rem; } }
 .footer-area .logo-letter { margin-left: -3rem; width: 60%; user-select: none; }
-@media only screen and (max-width: 767px) { .footer-area .logo-letter { margin-left: 0; width: 40%; } }
+@media only screen and (max-width: 767px) { .footer-area .logo-letter { margin-left: 0; width: 30%; } }
 .footer-area .m-foo { margin-left: 7rem; margin-right: -7rem; }
 @media only screen and (max-width: 767px) { .footer-area .m-foo { margin: 0; text-align: center; } }
 .footer-area .m-foo-normal { margin-left: 7rem; margin-right: -20rem; }
@@ -1668,7 +1668,7 @@ body.nav-active .nav__list-item:nth-child(4) { transition-delay: 0.9s; }
 @media only screen and (max-width: 767px) { .sec-clients-area .card-flex { display: block; } }
 .sec-clients-area .card { border: none; width: 100%; margin-bottom: 5rem; transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1); }
 @media only screen and (max-width: 767px) { .sec-clients-area .card { margin-bottom: 4rem; } }
-.sec-clients-area .card .card-body { padding: 1rem 0; margin: auto; filter: grayscale(1); }
+.sec-clients-area .card .card-body { padding: 1rem 0; margin: auto; filter: brightness(1); }
 @media only screen and (max-width: 767px) { .sec-clients-area .card .card-body { padding: 0; } }
 .sec-clients-area .card .card-body h2 { font-weight: 300; font-size: 26px; margin-bottom: 1.5rem; color: #121212; }
 @media only screen and (max-width: 767px) { .sec-clients-area .card .card-body h2 { font-size: 22px; } }
@@ -1677,7 +1677,7 @@ body.nav-active .nav__list-item:nth-child(4) { transition-delay: 0.9s; }
 .sec-clients-area .card .card-body h3 span { font-size: 43px; color: #00F6A1; position: absolute; margin-top: 8px; margin-left: -1rem; transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1); }
 @media only screen and (max-width: 767px) { .sec-clients-area .card .card-body h3 span { margin-top: 6px; } }
 .sec-clients-area .card:hover { transform: scale(1.2); }
-.sec-clients-area .card:hover .card-body { filter: grayscale(0); }
+.sec-clients-area .card:hover .card-body { filter: brightness(0.7); }
 .sec-clients-area .nl-content { position: relative; z-index: 1; }
 .sec-clients-area .nl-content .img-figura { width: 280px; position: absolute; margin: -30% -22% 0 0; right: 0; }
 @media only screen and (max-width: 767px) { .sec-clients-area .nl-content .img-figura { width: 180px; margin: -25rem 22% 0 0; left: 0; transform: rotate(180deg); } }

@@ -388,7 +388,7 @@
         .card-body{
                 padding: 1rem 0;
                 margin: auto;
-                filter: grayscale(1);
+                filter: brightness(1);
             @media #{$breakpoint-xs} {
                 padding: 0;        
             }
@@ -429,7 +429,7 @@
         transform: scale(1.2);
 
         .card-body{
-            filter: grayscale(0);
+            filter: brightness(0.7);
         }
     }
 
