@@ -85,7 +85,7 @@
     }
 
     .text-hero {
-            width: 60%;
+            width: 50%;
 
             @media #{$breakpoint-xs} {
                 width: 80%;
@@ -111,9 +111,9 @@
 
             .highlighted__line {                
                 height: 7%;
-                left: 28%;
+                left: 9%;
                 position: absolute;
-                top: 33.5%;
+                top: 35.5%;
                 user-select: none;
                 width: 20.5%;
                 z-index: -1;
