@@ -14,14 +14,21 @@
         z-index: 1;
         opacity: 1;
         height: 100%;
-        margin-right: 0;
-        transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1);
+        transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 
         &.active{
             z-index: -1;
             opacity: 0;
             height: 0;
-            margin-right: -15rem;
+            margin-left: -25rem;
+
+            h2{
+                font-size: 0;
+            }
+            .highlighted__line {
+                width: 0;
+            }
+
         }
     }
 
@@ -29,14 +36,38 @@
         z-index: 1;
         opacity: 0;
         height: 0;
-        margin-right: -15rem;
+        animation-delay: 6s;
+        margin-top: -30rem;
+        padding-bottom: 30rem;
         transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1);
+            
+            h2{
+                font-size: 0;
+            }
+            .highlighted__line {
+                &.thakns{
+                    width: 0;
+                }
+            }
 
        &.active{
             z-index: 1;
             height: 100%;
             opacity: 1;
-            margin-right: 0;
+            margin-top: 0;
+            padding-bottom: 0;
+
+            h2{
+                font-size: 65px;
+            }
+            .highlighted__line {
+                &.thakns{
+                    width: 20%;
+                }
+            }
+
+
+
         }
     }
 
@@ -57,7 +88,8 @@
                 margin-bottom: 30px;
                 color: $dark;
                 font-weight: 700;
-                line-height: 1;   
+                line-height: 1;
+                transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1);
 
                 @media #{$breakpoint-xs} {
                     font-size: 50px;
@@ -69,16 +101,17 @@
                 height: 57px;
                 left: 29%;
                 position: absolute;
-                top: 263px;
+                top: 311px;
                 user-select: none;
                 width: 20%;
                 z-index: -1;
+                transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1);
 
                 &.thakns{
-                    height: 11%;
+                    height: 50px;
                     left: 30%;
                     position: absolute;
-                    top: 38%;
+                    top: 204px;
                     user-select: none;
                     width: 20%;
                     z-index: -1;

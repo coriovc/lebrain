@@ -73,16 +73,17 @@
     <section class="contact-area">
       <div class="container"> 
 
-        <div class="text-hero send">
-            <h2 data-aos="fade-left" data-aos-offset="0">Let’s start a project together!</h2>
-            <img data-aos="fade-left" data-aos-offset="0" data-aos-delay="200" src="img/core-img/underline-contact.svg" alt="Line" class="highlighted__line">
-        </div>
-
         <div class="text-hero contact-Thakns">
             <h2 data-aos="fade-left" data-aos-offset="0">You are amazing!</h2>
             <img data-aos="fade-left" data-aos-offset="0" data-aos-delay="200" src="img/core-img/underline-contact.svg" alt="Line" class="highlighted__line thakns">
             <p>Thank you for filling out our form! We will be contacting you shortly</p>
-        </div> 
+        </div>
+
+        <div class="text-hero send">
+            <h2 data-aos="fade-left" data-aos-offset="0">Let’s start a project together!</h2>
+            <img data-aos="fade-left" data-aos-offset="0" data-aos-delay="200" src="img/core-img/underline-contact.svg" alt="Line" class="highlighted__line">
+        </div>
+        
         <div class="row justify-content-center contact-text send">                
           <form id="contact_form" action="php/send.php" method="post">
           <!-- Contact Form -->
@@ -158,7 +159,7 @@
                         </div>
                     </div>
                     <div class="col-12 ">
-                        <button type="submit" class="send">Send now<span class="material-icons-round">east</span></button>
+                        <button onclick="window.location='#top'" type="submit" class="send">Send now<span class="material-icons-round">east</span></button>
                     </div>
                 </div>           
                                      
