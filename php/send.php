@@ -6,6 +6,11 @@ $company = $_POST['company'];
 $country = $_POST['country'];
 $message = $_POST['message'];
 
+$services = "";
+    foreach($_POST['service'] as $serv){
+        $services .= $serv." - ";
+}
+
 $header = 'From: ' . $mail . " \r\n";
 $header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
 $header .= "Mime-Version: 1.0 \r\n";
@@ -16,6 +21,7 @@ $message .= "E-mail: " . $mail . " \r\n";
 $message .= "Teléfono de contacto: " . $phone . " \r\n";
 $message .= "Compañia: " . $company . " \r\n";
 $message .= "Pais: " . $country . " \r\n";
+$message .= "Servicios elegidos: ".$services.".";
 $message .= "Mensaje: " . $_POST['message'] . " \r\n\n\n";
 $message .= "Enviado el: " . date('d/m/Y', time());
 
@@ -23,6 +29,6 @@ $para = 'info@lebrain.com';
 $asunto = 'Contacto lebrain ';
 
 mail($para, $asunto, utf8_decode($message), $header);
-sleep(4);
+sleep(20);
 header("Location:" . $_SERVER['HTTP_REFERER']);
 ?>

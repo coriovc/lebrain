@@ -138,6 +138,10 @@
         &.credi{
             width: 50%;
             margin: 6rem 0;
+            @media #{$breakpoint-xs} {
+                width: 80%;
+                margin: 2rem 0;
+            }
         }
 
         &.buen{
@@ -347,6 +351,10 @@
     user-select: none; 
     display: inline-flex;
 
+    @media #{$breakpoint-xs} {
+        display: block;
+    }
+
     .cont-img {
         padding: 0;
         z-index: -1; 
@@ -355,14 +363,21 @@
 
         &.a{
             width: 45%;
+            @media #{$breakpoint-xs} {
+                width: 100%;
+            }
         }
         &.b{
             width: 32%; 
+            @media #{$breakpoint-xs} {
+                width: 100%;
+                margin-top: -5rem;
+            }
         }
     }
 
     .content-img{
-    display: block;
+        display: block;
     }
 
 }
@@ -600,6 +615,14 @@
 
             margin-top: 6rem;
 
+            .movil-m{
+
+                @media #{$breakpoint-xs} {                    
+                    margin-bottom: 2rem;
+                }
+
+            }
+
             h4 {
                 font-size: 215px;
                 font-family: 'Ubuntu', sans-serif;
@@ -607,7 +630,6 @@
                 color: $dark;
                 font-weight: 700;
                 line-height: 1;
-
 
 
                 @media #{$breakpoint-xs} {                    
@@ -699,6 +721,10 @@
     	margin-top: 2rem;
     	display: inline-flex;
 
+        @media #{$breakpoint-xs} {
+            margin-left: -2rem;
+        }
+
     	&.a{
     		margin-top: 0;
     	}    	
@@ -712,16 +738,14 @@
     		padding: 3rem 0 3rem 1rem;
 
             @media #{$breakpoint-xs} {
-                height: 7rem;
-                width: 7rem;
-                padding: 2.2rem 0 3rem 1rem;
+                padding: 3rem 0 3rem 1rem;
             }
     		h3{
     			color: #fff;
     			font-size: 13px;
    				margin-bottom: 10px;
                 @media #{$breakpoint-xs} {
-                    font-size: 13px;
+                    font-size: 15px;
                 }
 
    				&.color{

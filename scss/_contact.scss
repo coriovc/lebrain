@@ -6,7 +6,7 @@
     padding: 12rem 0 5rem 3rem;
 
     @media #{$breakpoint-xs} {
-        padding: 7rem 2rem 2rem 2rem;
+        padding: 7rem 1rem 2rem 2rem;
     }
     
 
@@ -66,10 +66,10 @@
             }
 
             .highlighted__line {                
-                height: 5%;
+                height: 57px;
                 left: 29%;
                 position: absolute;
-                top: 19%;
+                top: 263px;
                 user-select: none;
                 width: 20%;
                 z-index: -1;
@@ -85,18 +85,18 @@
                 }
 
                 @media #{$breakpoint-xs} {
-                    height: 4.5%;
+                    height: 50px;
                     left: 8%;
-                    top: 22%;
+                    top: 295px;
                     width: 58%;
 
                     &.thakns{
-                        height: 5%;
-                        left: 31%;
+                        height: 50px;
+                        left: 40px;
                         position: absolute;
-                        top: 19%;
+                        top: 293px;
                         user-select: none;
-                        width: 18%;
+                        width: 242px;
                         z-index: -1;
                     }
 
@@ -150,6 +150,7 @@
                 position: absolute;
                 font-size: 40px;
                 margin-top: 1rem;
+                margin-left: -1rem;
                 transition: all 0.3s ease;
             }
             

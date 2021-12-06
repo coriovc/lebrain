@@ -1032,8 +1032,8 @@
         
         opacity: 0;
         transform: translate(0%, 100%);
-        transition-delay: 0.8s !important;
-        transition: opacity 0.3s ease, transform 0.3s ease, color 0.3s ease;
+        transition-delay: 0.8s;
+        transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
     
         @media #{$breakpoint-xs} {            
             margin-top: 90%;    
@@ -1043,7 +1043,8 @@
         .line-menu-movil{
             margin-left: auto;
             margin-right: auto;
-            width: 80%;                
+            width: 80%;    
+            transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);            
         }
 
         .our-link {
@@ -1053,14 +1054,17 @@
             margin-right: auto;
             width: 80%;
             margin-top: 2rem;
+            transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 
             li {    
 
                 &.footer-icon{
                     display:inline-flex;
+                    transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 
                     a{
                         margin-right:2.5rem;
+                        transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 
                         @media #{$breakpoint-xs} {
                             margin-right: 1rem;

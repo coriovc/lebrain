@@ -18,7 +18,8 @@
         background-color: #f5f5f5;
 
         @media #{$breakpoint-xs} {
-            width: 90%;
+            width: 100%;
+            padding: 8rem 2rem;
         }
     }
 
@@ -40,7 +41,7 @@
             margin-top: 7rem;
             
             @media #{$breakpoint-xs} {
-                margin-top: 7rem;
+                margin-top: 1rem;
             }
         }
     }
@@ -320,6 +321,11 @@
                 div{
                     width: 25%;
                     margin-left: auto;
+                    @media #{$breakpoint-xs} {
+                        width: 100%;
+                        margin-left: auto;
+                        margin-top: 3rem;
+                    }
                 }
 
             }
@@ -441,6 +447,17 @@
         display: inline-flex;
         justify-content: center;
 
+        @media #{$breakpoint-xs} {
+            display: block;
+        }
+
+        &.bite{
+            display: inline-flex;
+            @media #{$breakpoint-xs} {
+                display: inline-flex;
+                margin-left: -1rem;
+            }
+        }
 
         &.a{
             margin-top: 0;
@@ -449,6 +466,7 @@
         &.facu{
            display: block;
            justify-content: center; 
+           
         }    
 
 
@@ -458,9 +476,9 @@
             padding: 5rem 0 3rem 1rem;
 
             @media #{$breakpoint-xs} {
-                height: 7rem;
+                height: auto;
                 width: 100%;
-                padding: 5rem 0 3rem 1rem;
+                padding: 1rem;
             }
             h3{
                 color: #fff;
@@ -519,9 +537,9 @@
             padding: 5rem 0 3rem 3rem;
 
             @media #{$breakpoint-xs} {
-                height: 7rem;
-                width: 7rem;
-                padding: 2.2rem 0 3rem 1rem;
+                height: 12rem;
+                width: 12rem;
+                padding: 3.2rem 0 3rem 2rem;
             }
             h3{
                 color: #fff;
@@ -566,6 +584,11 @@
         &.bit{
             width: 60%;
             margin: 2rem 0;
+
+            @media #{$breakpoint-xs} {
+                width: 90%;
+                margin: 1rem 0;
+            }
         }
 
 
@@ -573,6 +596,10 @@
         &.bit-1{
             width: 15%;
             margin: 2rem;
+            @media #{$breakpoint-xs} {
+                width: 40%;
+                margin: 1rem;
+            }
         }
         &.bit-2{
             width: 15%;
@@ -623,6 +650,9 @@
     &.bit-sec-fo{
         z-index: 0;
         padding: 5rem 0;
+        @media #{$breakpoint-xs} {
+            padding: 3rem 0;
+        }
     }
 
     &.brand-b1{
