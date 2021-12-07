@@ -1000,7 +1000,7 @@
         .nav:after {
           background: white;
           transition-delay: 0s;
-          height: 40vh;
+          height: 125vh;
           box-shadow: 0 0.1rem 3rem rgba(0, 0, 0, 0.150);
           
           @media #{$breakpoint-xs} {
@@ -1009,7 +1009,7 @@
         }
         .nav:before {
           transition-delay: 0.1s;
-           height: 40vh;
+           height: 125vh;
 
           @media #{$breakpoint-xs} {
              height: 125vh;       
@@ -1020,7 +1020,7 @@
 .nav__content {
   position: fixed;
   visibility: hidden;
-  top: 17%;
+  top: 54%;
   transform: translate(0%, -50%);
   width: 100%;
   text-align: left;
@@ -1028,23 +1028,51 @@
              top: 45%;       
   }
 
-    .movil-menu{
-        
-        opacity: 0;
-        transform: translate(0%, 100%);
-        transition-delay: 0.8s;
-        transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-    
-        @media #{$breakpoint-xs} {            
-            margin-top: 90%;    
+        .img-fond-nav{
+            position: absolute;
+            width: 60%;
+            margin-left: 18rem;
+            margin-top: -7rem;
+            opacity: 0;
+            transform: translate(0%, 100%);
+            transition-delay: 1s;
+            transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
         }
+
+        .movil-menu{
+        
+            opacity: 0;
+            visibility: hidden;        
+            transition-delay: 0.8s;
+            position: absolute;
+            margin-top: 0;
+            width: 20%;
+            margin-left: auto;
+            right: 2rem;
+            transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+    
+            @media #{$breakpoint-xs} {  
+                position: relative;
+                margin-top: 0;
+                width: auto;
+                margin-left:0;
+                right: 0;
+                opacity: 0;
+                visibility: hidden;
+                transform: translate(0%, 100%);          
+                margin-top: 90%;    
+            }
 
       
         .line-menu-movil{
             margin-left: auto;
             margin-right: auto;
-            width: 80%;    
+            width: 0;    
             transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);            
+
+            @media #{$breakpoint-xs} {  
+                 width: 80%;
+            }
         }
 
         .our-link {
@@ -1091,13 +1119,15 @@
 }
 .nav__list {
     position: relative;
-    display: grid;
-    float: right;
-    margin-right: 3.1rem;
+    display: grid;    
+    width: 30%;
+    margin: auto;
+
     @media #{$breakpoint-xs} {
         margin-left: 5rem;
         float: left;
-        margin-right: 0;    
+        margin-right: 0; 
+        width: 100%;   
     }
 
     span{
@@ -1111,8 +1141,8 @@
         
         @media #{$breakpoint-xs} {
             display: block;
-            margin-top: -2rem;
-            margin-left: 7.5rem;   
+            margin-top: -42px;
+            margin-left: 10rem;   
         }
 
 
@@ -1132,7 +1162,7 @@
   transform: translate(0%, 100%);
   transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
   margin-right: 40px;
-  margin-top: 10px;
+  margin-top: -9px;
   @media #{$breakpoint-xs} {
     margin-right: 40px;
     margin-top: 10px;           
@@ -1143,8 +1173,9 @@
   position: absolute;
   background: #00F6A1;
   width: 0;
-  height: 2px;
-  top: 100%;
+  height: 74px;
+  top: 22px;
+  left: -1rem;
   transform: translate(0%, 0%);
   transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
   z-index: -1;
@@ -1153,11 +1184,28 @@
 .nav__list-item a {
   text-decoration: none;
   color: #000;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 80px;
+  font-weight: 700;
     
     @media #{$breakpoint-xs} {
         font-size: 40px;     
+    }
+  }
+
+
+  .nav__list-item h4 {
+    text-decoration: none;
+    color: #000;
+    font-size: 60px;
+    font-weight: 400;    
+    font-size: 20px;
+    margin-left: -3rem;
+    margin-top: 25px;
+    position: absolute;
+    
+    @media #{$breakpoint-xs} {
+        font-size: 20px; 
+        display: none;    
     }
   }
 
@@ -1206,12 +1254,23 @@
     }
 
     body.nav-active .movil-menu {
-      opacity: 0;
-      visibility: hidden;
       transform: translateX(0%);
+      transition-delay: 0.8s;
+      opacity: 1;
+      visibility: visible;
           @media #{$breakpoint-xs} {
-            opacity: 1;
-            visibility: visible;     
+            opacity: 1; 
+            visibility: visible;   
+        }
+    }
+
+    body.nav-active .img-fond-nav {
+      opacity: 0.07;
+      transform: translateX(0%);
+      transition-delay: 0.8s;
+          @media #{$breakpoint-xs} {
+            opacity: 0;
+            visibility: hidden;     
         }
     }
 

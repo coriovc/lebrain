@@ -19,13 +19,6 @@
 </head>
 <body id="top">
 
-    <!-- Preloader--> 
-    <div id="preloader">
-        <div class="wrapper">
-            <div class="cssload-loader"></div>
-            <div class="img-load animate-lebrain"><img src="img/logo-letter.svg" alt="logo"></div>
-        </div>
-    </div>
 
     <header class="menu">
       <div class="menu-logo logo-h">        
@@ -48,11 +41,12 @@
         </a>
         </div>
         <div class="nav__content">
+          <img class="img-fond-nav" src="img/logo-black.svg" alt="logo">
           <ul class="nav__list">            
-            <li class="nav__list-item"><a href="Work.html">Work</a></li>
-            <li class="nav__list-item"><a href="About.html">About us</a></li>
-            <li class="nav__list-item"><a href="About_you.html">About you</a></li>
-            <li class="nav__list-item"><a href="Contact.html">Contact<span class="material-icons-round">east</span></a></li>          
+            <li class="nav__list-item cl"><h4>01</h4><a href="Work.html">Work</a></li>
+            <li class="nav__list-item cl1"><h4>02</h4><a href="About.html">About us</a></li>
+            <li class="nav__list-item cl2"><h4>03</h4><a href="About_you.html">About you</a></li>
+            <li class="nav__list-item cl3"><h4>04</h4><a href="Contact.html">Contact us<span class="material-icons-round">east</span></a></li>          
           </ul>
           <div class="movil-menu">
             <hr class="line-menu-movil">
@@ -63,7 +57,7 @@
                     <li class="footer-icon"><a href="https://www.linkedin.com/company/lebrain-agency"><span class="icon-linkedin iconso-"></span></a></li>
                 </ul>
             </nav>
-        </div>
+          </div>
         </div>
       </div>
     </header>    
@@ -72,16 +66,16 @@
     <section class="pc-area">
       <div class="container"> 
 
-        <div class="text-hero">
+        <div class="text-hero" data-aos="fade-up">
             <img src="img/core-img/pc-icon.svg" alt="icon" class="icon"><h2>Performance Content</h2>
         </div>
         <div class="l-content">
-            <h3 data-aos="fade-up">Engage better your audience with the <strong>right message and design.</strong></h3>
-            <p data-aos="fade-up" data-aos-delay="200">We work side by side with Performance Agencies to identify the best ads concepts, types and formats, and then we take on the task of developing creatives tailored to each need.</p>
+            <h3 data-aos="fade-up" data-aos-delay="200">Engage better your audience with the <strong>right message and design.</strong></h3>
+            <p data-aos="fade-up" data-aos-delay="400">We work side by side with Performance Agencies to identify the best ads concepts, types and formats, and then we take on the task of developing creatives tailored to each need.</p>
         </div> 
-        <div class="proyects">
+        <!--<div class="proyects">
           <div class="row align-items-center justify-content-center">
-                <!-- landing Content -->
+                  
                 <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-delay="100">
                   <a href="#" class="card">
                     <img src="img/core-img/pc.png" alt="proyect" class="img-proyect">    
@@ -110,8 +104,18 @@
                   </div>
                 </div>                
           </div>
-        </div>
+        </div>-->
       </div>
+
+      <div class="content-container"  data-aos="fade-down">
+          <div id="carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/core-img/Performance.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
     </section>
     <!-- ***** contact Area End ***** -->
     

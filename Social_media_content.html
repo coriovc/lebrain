@@ -9,23 +9,10 @@
     <title>Lebrain - Social Media Content</title>
     <!-- Favicon -->
     <link rel="icon" href="img/favicon/favicon.png">
-    <link rel="apple-touch-icon" href="img/favicon/apple-icon.png"/>
-    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/favicon-192x192.png"/>
-    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png"/>
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png"/>
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png"/>
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="css/lebrain-style.css"> 
 </head>
 <body id="top">
-
-    <!-- Preloader--> 
-    <div id="preloader">
-        <div class="wrapper">
-            <div class="cssload-loader"></div>
-            <div class="img-load animate-lebrain"><img src="img/logo-letter.svg" alt="logo"></div>
-        </div>
-    </div>
 
     <header class="menu">
       <div class="menu-logo logo-h">        
@@ -48,11 +35,12 @@
         </a>
         </div>
         <div class="nav__content">
+          <img class="img-fond-nav" src="img/logo-black.svg" alt="logo">
           <ul class="nav__list">            
-            <li class="nav__list-item"><a href="Work.html">Work</a></li>
-            <li class="nav__list-item"><a href="About.html">About us</a></li>
-            <li class="nav__list-item"><a href="About_you.html">About you</a></li>
-            <li class="nav__list-item"><a href="Contact.html">Contact<span class="material-icons-round">east</span></a></li>          
+            <li class="nav__list-item cl"><h4>01</h4><a href="Work.html">Work</a></li>
+            <li class="nav__list-item cl1"><h4>02</h4><a href="About.html">About us</a></li>
+            <li class="nav__list-item cl2"><h4>03</h4><a href="About_you.html">About you</a></li>
+            <li class="nav__list-item cl3"><h4>04</h4><a href="Contact.html">Contact us<span class="material-icons-round">east</span></a></li>          
           </ul>
           <div class="movil-menu">
             <hr class="line-menu-movil">
@@ -63,7 +51,7 @@
                     <li class="footer-icon"><a href="https://www.linkedin.com/company/lebrain-agency"><span class="icon-linkedin iconso-"></span></a></li>
                 </ul>
             </nav>
-        </div>
+          </div>
         </div>
       </div>
     </header>    
@@ -72,16 +60,15 @@
     <section class="smc-area">
       <div class="container"> 
 
-        <div class="text-hero">
+        <div class="text-hero" data-aos="fade-up">
             <img src="img/core-img/smc-icon.svg" alt="icon" class="icon"><h2>Social Media Content</h2>            
         </div>
         <div class="l-content">
-            <h3 data-aos="fade-up" >Having a solid social media content strategy means we first set specific content goals for your brand in order to make <strong>impact in the right way.<strong></strong></h3>
-            <p data-aos="fade-up" data-aos-delay="200">We can’t turn followers into fans overnight, it’s all about being consistent in the quality of the conversation throughout the calendar.</p>
+            <h3 data-aos="fade-up" data-aos-delay="200">Having a solid social media content strategy means we first set specific content goals for your brand in order to make <strong>impact in the right way.<strong></strong></h3>
+            <p data-aos="fade-up" data-aos-delay="400">We can’t turn followers into fans overnight, it’s all about being consistent in the quality of the conversation throughout the calendar.</p>
         </div> 
-        <div class="proyects">
-          <div class="row align-items-center justify-content-center">
-                <!-- landing Content -->
+        <!--<div class="proyects">
+          <div class="row align-items-center justify-content-center">                
                 <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-delay="100">
                   <a href="#" class="card">
                     <img src="img/core-img/smc.png" alt="proyect" class="img-proyect">    
@@ -110,10 +97,27 @@
                   </div>
                 </div>                
           </div>
-        </div>
+        </div>-->
       </div>
+      <div class="content-container" data-aos="fade-down">
+          <div id="carousel"  class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" >
+                <img src="img/core-img/RRSS-01.svg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/core-img/RRSS-02.svg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/core-img/RRSS-03.svg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
     </section>
     <!-- ***** contact Area End ***** -->
+
+
 
     <!-- ***** Sec-footer Area Start ***** -->
     <section class="sec-footer-area">
@@ -202,6 +206,7 @@
         duration: 1000,
         once: true
       });
+
   </script>
 </body>
 

@@ -11,8 +11,7 @@
     <link rel="icon" href="../img/favicon/favicon.png">
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="../css/lebrain-style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../css/aos.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
 <body id="top">
@@ -47,11 +46,12 @@
         </a>
         </div>
         <div class="nav__content">
+          <img class="img-fond-nav" src="../img/logo-black.svg" alt="logo">
           <ul class="nav__list">            
-            <li class="nav__list-item"><a href="../Work.html">Work</a></li>
-            <li class="nav__list-item"><a href="../About.html">About us</a></li>
-            <li class="nav__list-item"><a href="../About_you.html">About you</a></li>
-            <li class="nav__list-item"><a href="../Contact.html">Contact<span class="material-icons-round">east</span></a></li>          
+            <li class="nav__list-item cl"><h4>01</h4><a href="../Work.html">Work</a></li>
+            <li class="nav__list-item cl1"><h4>02</h4><a href="../About.html">About us</a></li>
+            <li class="nav__list-item cl2"><h4>03</h4><a href="../About_you.html">About you</a></li>
+            <li class="nav__list-item cl3"><h4>04</h4><a href="../Contact.html">Contact us<span class="material-icons-round">east</span></a></li>          
           </ul>
           <div class="movil-menu">
             <hr class="line-menu-movil">
@@ -62,7 +62,7 @@
                     <li class="footer-icon"><a href="https://www.linkedin.com/company/lebrain-agency"><span class="icon-linkedin iconso-"></span></a></li>
                 </ul>
             </nav>
-        </div>
+          </div>
         </div>
       </div>
     </header>    
@@ -72,7 +72,7 @@
     </div>
 
     <div class="landing-hero"> 
-        <img class="d-none d-xl-block" src="../img/proyects/ihunt/img-1.png">
+        <img class="d-none d-xl-block" src="../img/proyects/ihunt/HeaderiHUnt.png">
         <img class="d-block d-xl-none" src="../img/bg-img/ihunt.png">
     </div>
 
@@ -112,7 +112,8 @@
     <!-- ***** landing Area End ***** -->
 
     <div class="landing-img-logo"> 
-        <img src="../img/proyects/ihunt/img-2.png">
+        <!--<img src="../img/proyects/ihunt/img-2.png">-->
+        <video autoplay loop muted><source src="../img/proyects/ihunt/video.mp4"></video>
     </div>
 
     <!-- ***** color area Start ***** -->
@@ -314,7 +315,8 @@
     AOS.init({
         easing: 'ease-in-out-back',
         offset: 0,
-        duration: 1000
+        duration: 1000,
+        once: true
       });
   </script>
 </body>

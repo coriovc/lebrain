@@ -19,13 +19,6 @@
 </head>
 <body id="top">
 
-    <!-- Preloader--> 
-    <div id="preloader">
-        <div class="wrapper">
-            <div class="cssload-loader"></div>
-            <div class="img-load animate-lebrain"><img src="img/logo-letter.svg" alt="logo"></div>
-        </div>
-    </div>
 
     <header class="menu">
       <div class="menu-logo logo-h">        
@@ -48,11 +41,12 @@
         </a>
         </div>
         <div class="nav__content">
+          <img class="img-fond-nav" src="img/logo-black.svg" alt="logo">
           <ul class="nav__list">            
-            <li class="nav__list-item"><a href="Work.html">Work</a></li>
-            <li class="nav__list-item"><a href="About.html">About us</a></li>
-            <li class="nav__list-item"><a href="About_you.html">About you</a></li>
-            <li class="nav__list-item"><a href="Contact.html">Contact<span class="material-icons-round">east</span></a></li>          
+            <li class="nav__list-item cl"><h4>01</h4><a href="Work.html">Work</a></li>
+            <li class="nav__list-item cl1"><h4>02</h4><a href="About.html">About us</a></li>
+            <li class="nav__list-item cl2"><h4>03</h4><a href="About_you.html">About you</a></li>
+            <li class="nav__list-item cl3"><h4>04</h4><a href="Contact.html">Contact us<span class="material-icons-round">east</span></a></li>          
           </ul>
           <div class="movil-menu">
             <hr class="line-menu-movil">
@@ -63,7 +57,7 @@
                     <li class="footer-icon"><a href="https://www.linkedin.com/company/lebrain-agency"><span class="icon-linkedin iconso-"></span></a></li>
                 </ul>
             </nav>
-        </div>
+          </div>
         </div>
       </div>
     </header>    
@@ -72,22 +66,22 @@
     <section class="strategy-area">
       <div class="container"> 
         <div class="center justify-content-center">
-          <div class="text-hero">
+          <div class="text-hero" data-aos="fade-up" >
               <img src="img/core-img/strategy-icon.svg" alt="icon" class="icon"><h2>Strategy</h2>            
           </div>
           <div class="l-content">
-              <h3 data-aos="fade-up">Without strategy content is just stuff, and the world has enough stuff.</h3>
-              <img data-aos="fade-up" data-aos-delay="200" src="img/core-img/comillas.svg" alt="icon" class="icon">
+              <h3 data-aos="fade-up" data-aos-delay="200" da>Without strategy content is just stuff, and the world has enough stuff.</h3>
+              <img data-aos="fade-up" data-aos-delay="400" src="img/core-img/comillas.svg" alt="icon" class="icon">
               <h4>Arjun Basu</h4>
-              <p data-aos="fade-up" data-aos-delay="400">A clear and straightforward marketing strategy is what gives meaning to our work and success to your business.</p>
+              <p data-aos="fade-up" data-aos-delay="600">A clear and straightforward marketing strategy is what gives meaning to our work and success to your business.</p>
           </div>
         </div>
         <div class="proyect">
           <div class="row align-items-center justify-content-center">
                 <!-- landing Content -->
                 <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                  <a href="landing/Crediminuto.html" class="card" style="border: 1px solid #f5f5f5;">
-                    <img src="img/core-img/strategy-1.png" alt="crediminuto">    
+                  <a href="landing/Crediminuto.html" class="card tild" style="border: 1px solid #f5f5f5;">
+                    <img src="img/bg-img/crediminuto.png" alt="crediminuto">    
                   </a>
                   <div class="title">
                     <h2>Crediminuto</h2>
@@ -95,7 +89,7 @@
                   </div>
                 </div> 
                 <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                  <a href="landing/Buenbit.html" class="card">
+                  <a href="landing/Buenbit.html" class="card tild">
                     <img src="img/bg-img/buenbit.svg" alt="buenbit">    
                   </a>
                   <div class="title">
@@ -104,8 +98,8 @@
                   </div>
                 </div>
                 <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-delay="500">
-                  <a href="landing/ihunt.html" class="card">
-                    <img src="img/core-img/strategy-3.png" alt="ihunt">    
+                  <a href="landing/ihunt.html" class="card tild">
+                    <img src="img/bg-img/iHunt.png" alt="ihunt">    
                   </a>
                   <div class="title">
                     <h2>iHunt</h2>
@@ -181,6 +175,7 @@
 
     <!-- ******* All JS Files ******* -->
     <!-- jQuery js -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js'></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" ></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.easing.min.js"></script> 
@@ -206,6 +201,11 @@
         duration: 1000,
         once: true
       });
+    VanillaTilt.init(document.querySelectorAll(".tild"), {
+      glare: true,
+      reverse: true,
+      "max-glare": 0.15
+    });
   </script>
 </body>
 

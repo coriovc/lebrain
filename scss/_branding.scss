@@ -581,8 +581,22 @@
             width: 60%;
         }
 
+        &.icons{
+            width: 50%;
+        }
+
         &.bit{
             width: 60%;
+            margin: 2rem 0;
+
+            @media #{$breakpoint-xs} {
+                width: 90%;
+                margin: 1rem 0;
+            }
+        }
+
+        &.fac{
+            width: 81%;
             margin: 2rem 0;
 
             @media #{$breakpoint-xs} {
@@ -667,6 +681,16 @@
 
     &.bit-log{
         padding: 2rem 0 1rem 0;
+        z-index: 0; 
+    }
+
+    &.fac-log{
+        padding: 2rem 0 1rem 0;
+        z-index: 0; 
+    }
+
+    &.fac-icon{
+        padding: 8rem 0 ;
         z-index: 0; 
     }
 

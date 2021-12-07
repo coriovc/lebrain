@@ -11,13 +11,12 @@
     <link rel="icon" href="../img/favicon/favicon.png">
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="../css/lebrain-style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../css/aos.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
 <body id="top">
 
-    <!-- Preloader--> 
+      <!-- Preloader--> 
     <div id="preloader">
         <div class="wrapper">
             <div class="cssload-loader"></div>
@@ -46,11 +45,12 @@
         </a>
         </div>
         <div class="nav__content">
+          <img class="img-fond-nav" src="../img/logo-black.svg" alt="logo">
           <ul class="nav__list">            
-            <li class="nav__list-item"><a href="../Work.html">Work</a></li>
-            <li class="nav__list-item"><a href="../About.html">About us</a></li>
-            <li class="nav__list-item"><a href="../About_you.html">About you</a></li>
-            <li class="nav__list-item"><a href="../Contact.html">Contact<span class="material-icons-round">east</span></a></li>          
+            <li class="nav__list-item cl"><h4>01</h4><a href="../Work.html">Work</a></li>
+            <li class="nav__list-item cl1"><h4>02</h4><a href="../About.html">About us</a></li>
+            <li class="nav__list-item cl2"><h4>03</h4><a href="../About_you.html">About you</a></li>
+            <li class="nav__list-item cl3"><h4>04</h4><a href="../Contact.html">Contact us<span class="material-icons-round">east</span></a></li>          
           </ul>
           <div class="movil-menu">
             <hr class="line-menu-movil">
@@ -61,7 +61,7 @@
                     <li class="footer-icon"><a href="https://www.linkedin.com/company/lebrain-agency"><span class="icon-linkedin iconso-"></span></a></li>
                 </ul>
             </nav>
-        </div>
+          </div>
         </div>
       </div>
     </header>    
@@ -75,7 +75,7 @@
       <div class="content-container"> 
         <div class="row justify-content-between">
 
-          <div class="col-12 col-lg-4">
+          <div class="col-12 col-lg-4" data-aos="fade-down">
             <div class="content-text">
               <h2 class="brand">Flambeau</h2>
               <ul><li>Service</li></ul>
@@ -86,7 +86,7 @@
               
             </div>
           </div>
-          <div class="col-12 col-lg-8">
+          <div class="col-12 col-lg-7" data-aos="fade-down" data-aos-delay="200">
             <div class="content-text flam">
               <p class="primer-brand">Flambeau is a Venture Capital with a new business model closely aligned with the times.</p>
               <p>Our work was a careful balance between copywriting and visual concepts.</p>
@@ -104,11 +104,11 @@
     <!-- ***** landing Area End ***** -->
 
 
-    <div class="landing-img-pro brand-a"> 
+    <div class="landing-img-pro brand-a" data-aos="fade-down" data-aos-delay="600"> 
         <img src="../img/proyects/flambeau/img-1.png">
     </div>
 
-    <div class="landing-img-pro brand-b"> 
+    <div class="landing-img-pro brand-b" data-aos="fade-down"> 
         <img src="../img/proyects/flambeau/img-2.png">
     </div>
 
@@ -198,7 +198,8 @@
     AOS.init({
         easing: 'ease-in-out-back',
         offset: 0,
-        duration: 1000
+        duration: 1000,
+        once: true
       });
   </script>
 </body>

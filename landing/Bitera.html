@@ -11,8 +11,7 @@
     <link rel="icon" href="../img/favicon/favicon.png">
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="../css/lebrain-style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../css/aos.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body id="top">
@@ -39,11 +38,12 @@
         </a>
         </div>
         <div class="nav__content">
+          <img class="img-fond-nav" src="../img/logo-black.svg" alt="logo">
           <ul class="nav__list">            
-            <li class="nav__list-item"><a href="../Work.html">Work</a></li>
-            <li class="nav__list-item"><a href="../About.html">About us</a></li>
-            <li class="nav__list-item"><a href="../About_you.html">About you</a></li>
-            <li class="nav__list-item"><a href="../Contact.html">Contact<span class="material-icons-round">east</span></a></li>          
+            <li class="nav__list-item cl"><h4>01</h4><a href="../Work.html">Work</a></li>
+            <li class="nav__list-item cl1"><h4>02</h4><a href="../About.html">About us</a></li>
+            <li class="nav__list-item cl2"><h4>03</h4><a href="../About_you.html">About you</a></li>
+            <li class="nav__list-item cl3"><h4>04</h4><a href="../Contact.html">Contact us<span class="material-icons-round">east</span></a></li>          
           </ul>
           <div class="movil-menu">
             <hr class="line-menu-movil">
@@ -54,7 +54,7 @@
                     <li class="footer-icon"><a href="https://www.linkedin.com/company/lebrain-agency"><span class="icon-linkedin iconso-"></span></a></li>
                 </ul>
             </nav>
-        </div>
+          </div>
         </div>
       </div>
     </header>    
@@ -69,12 +69,12 @@
         <div class="row justify-content-between">
 
           <div class="col-12">
-            <div class="img-head-bitera">
+            <div class="img-head-bitera" data-aos="fade-up">
               <img class="img-1" src="../img/proyects/bitera/img-1.png">
             </div>
           </div>
           <div class="col-12">
-            <div class="img-head-bitera">
+            <div class="img-head-bitera" data-aos="fade-up" data-aos-delay="200">
               <img class="img-2" src="../img/proyects/bitera/img-2.png">
             </div>
           </div>         
@@ -87,7 +87,7 @@
       <div class="content-container"> 
         <div class="row justify-content-between">
 
-          <div class="col-12 col-lg-12">
+          <div class="col-12 col-lg-12" data-aos="fade-up">
             <div class="content-text">
               <h3 class="color">Paleta cromática</h3>
               
@@ -107,14 +107,14 @@
       </div>
     </section>
 
-    <div class="brand-img-pro bit-log"> 
+    <div class="brand-img-pro bit-log" data-aos="fade-down"> 
         <img class="bit" src="../img/proyects/bitera/img-3.png">
     </div>
 
     <section class="brand-area">
       <div class="content-container"> 
         <div class="row justify-content-between">
-          <div class="col-12 col-lg-12">
+          <div class="col-12 col-lg-12" data-aos="fade-up">
             <div class="tipografia">
               <h3 class="title">Tipografia</h3>
                 <div class="row align-items-center justify-content-center">
@@ -142,7 +142,7 @@
       </div>
     </section>
 
-    <div class="brand-img-pro bit-sec-fo"> 
+    <div class="brand-img-pro bit-sec-fo" data-aos="fade-down"> 
         <img class="bit-1" src="../img/proyects/bitera/img-4-a.png">
         <img class="bit-1" src="../img/proyects/bitera/img-4-b.png">
         <img class="bit-1" src="../img/proyects/bitera/img-4-c.png">
@@ -235,7 +235,8 @@
     AOS.init({
         easing: 'ease-in-out-back',
         offset: 0,
-        duration: 1000
+        duration: 1000,
+        once: true
       });
   </script>
 </body>

@@ -3,7 +3,7 @@
 .strategy-area {
     position: relative;
     z-index: 0;
-    padding: 12rem 3rem 1rem 3rem;
+    padding: 12rem 0 1rem 0;
 
     @media #{$breakpoint-xs} {
         padding: 8rem 2rem 2rem 2rem;;
@@ -238,6 +238,7 @@
             border-radius: 0;
             width: 370px;
             height: 475px;
+            user-select: none;
 
             @media #{$breakpoint-xs} {
                 margin: 1rem auto 1rem auto;
@@ -267,7 +268,7 @@
 .branding-area {
     position: relative;
     z-index: 0;
-    padding: 12rem 3rem 1rem 3rem;
+    padding: 12rem 0 1rem 0;
 
     @media #{$breakpoint-xs} {
         padding: 8rem 2rem 2rem 2rem;;
@@ -452,6 +453,7 @@
             border-radius: 0;
             width: 370px;
             height: 475px;
+            user-select: none;
 
             @media #{$breakpoint-xs} {
                 margin: 1rem auto 1rem auto;
@@ -481,7 +483,7 @@
 .web-dev-area {
     position: relative;
     z-index: 0;
-    padding: 12rem 3rem 1rem 3rem;
+    padding: 12rem 0 1rem 0;
 
     @media #{$breakpoint-xs} {
         padding: 8rem 2rem 2rem 2rem;;
@@ -664,6 +666,7 @@
             border-radius: 0;
             width: 370px;
             height: 475px;
+            user-select: none;
 
             @media #{$breakpoint-xs} {
                 margin: 1rem auto 1rem auto;
@@ -695,10 +698,20 @@
 .ux-ui-area {
     position: relative;
     z-index: 0;
-    padding: 12rem 3rem 1rem 3rem;
+    padding: 12rem 0 1rem 0;
 
     @media #{$breakpoint-xs} {
         padding: 8rem 2rem 2rem 2rem;;
+    }
+
+    .content-container{
+        width: 81%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5rem;
+        @media #{$breakpoint-xs} {
+        width: 90%;
+        }
     }
     
     .text-hero {
@@ -878,6 +891,7 @@
             border-radius: 0;
             width: 370px;
             height: 475px;
+            user-select: none;
 
             @media #{$breakpoint-xs} {
                 margin: 1rem auto 1rem auto;
@@ -908,10 +922,20 @@
 .smc-area {
     position: relative;
     z-index: 0;
-    padding: 12rem 3rem 1rem 3rem;
+    padding: 12rem 0 1rem 0;
 
     @media #{$breakpoint-xs} {
         padding: 8rem 2rem 2rem 2rem;;
+    }
+
+    .content-container{
+        width: 81%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5rem;
+        @media #{$breakpoint-xs} {
+        width: 90%;
+        }
     }
         
     .text-hero {
@@ -1089,6 +1113,7 @@
             border-radius: 0;
             width: 370px;
             height: 475px;
+            user-select: none;
 
             @media #{$breakpoint-xs} {
                 margin: 1rem auto 1rem auto;
@@ -1123,6 +1148,16 @@
 
     @media #{$breakpoint-xs} {
         padding: 8rem 2rem 2rem 2rem;;
+    }
+
+    .content-container{
+        width: 81%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5rem;
+        @media #{$breakpoint-xs} {
+        width: 90%;
+        }
     }
     
     .text-hero {
@@ -1302,6 +1337,7 @@
             border-radius: 0;
             width: 370px;
             height: 475px;
+            user-select: none;
 
             @media #{$breakpoint-xs} {
                 margin: 1rem auto 1rem auto;
