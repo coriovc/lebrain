@@ -150,23 +150,44 @@
         }
     }
 
+    video{        
+
+        @media #{$breakpoint-xs} {
+            margin-left: -9rem;
+        }
+    }
+
     @media #{$breakpoint-xs} {
             
     }
 }
 
 .content-title {
-            width: 82%;
+            width: 81%;
             margin-left: auto;
             margin-right: auto;
 
             &.credi{
                 margin-top: 14rem;
+                @media #{$breakpoint-xs} {
+                    margin-top: 0;
+                }
+            }
+
+            &.cred{
+                margin-left: auto;
+                @media #{$breakpoint-xs} {
+                    margin-left: 0;
+                }
             }
 
             &.alca{
                 margin-top: 6rem;
                 margin-right: 5rem;
+                @media #{$breakpoint-xs} {
+                    margin-top: 0;
+                    margin-right: 1rem;
+                }
             }
             @media #{$breakpoint-xs} {
                
@@ -178,7 +199,8 @@
                 margin-bottom: 30px;
                 color: $dark;
                 font-weight: 300;
-                line-height: 1;   
+                line-height: 1;  
+                padding-top: 80px; 
 
                 &.title{
                     font-size: 20px;
@@ -203,7 +225,7 @@
 
                 @media #{$breakpoint-xs} {
                     font-size: 50px;
-                    padding-top: 80px;
+                    padding-top: 0;
                 }
             }
 }
@@ -222,6 +244,14 @@
         &.small{
             width: 60%;
         }
+
+        &ihu{
+            width: 60%;
+            @media #{$breakpoint-xs} {
+                width: 90%;
+            }
+        }
+
         &.cre-a{
             width: 80%;
         }
@@ -231,11 +261,74 @@
 
         &.buen{
             width: 27%;
+            @media #{$breakpoint-xs} {
+                display: none;
+            }
+        }
+
+        &.bb-1{
+            width: 81%;
+            @media #{$breakpoint-xs} {
+                width: 130%;
+                max-width: 200%;
+            }
+        }
+
+        &.bb-2{
+            width: 81%;
+            @media #{$breakpoint-xs} {
+                width: 150%;
+                margin-left: -6rem;
+                max-width: 200%;
+            }
+        }
+
+        &.bb-3{
+            width: 81%;
+            @media #{$breakpoint-xs} {
+                width: 150%;
+                margin-left: -7rem;
+                max-width: 200%;
+            }
+        }
+
+        &.cred-1{
+            width: 81%;
+            @media #{$breakpoint-xs} {
+                width: 200%;
+                margin-left: -13rem;
+                max-width: 200%;
+            }
+        }
+
+        &.cred-2{
+            width: 81%;
+            @media #{$breakpoint-xs} {
+                width: 180%;
+                margin-left: -7rem;
+                max-width: 200%;
+            }
+        }
+
+        &.cred-3{
+            width: 81%;
+            @media #{$breakpoint-xs} {
+                width: 100%;
+            }
+        }
+
+        &.cred-4{
+            width: 81%;
+            @media #{$breakpoint-xs} {
+                width: 165%;
+                margin-left: -15rem;
+                max-width: 200%;
+            }
         }
 
         &.buen2{
-            width: 120%;
-            margin-left: -24rem;
+            width: 100%;
+            margin-left: -18rem;
             max-width: 200%;
         }
     }
@@ -251,7 +344,10 @@
 
     &.brand-b1{
         margin-top: -10rem;
-        z-index: -1; 
+        z-index: -1;         
+        @media #{$breakpoint-xs} {
+            margin-top: -2rem;
+        }
     }
 
     &.a{
@@ -280,6 +376,9 @@
         &.credi2{
                 margin-top: -16rem;
                 padding-bottom: 6px;
+                @media #{$breakpoint-xs} {
+                    margin-top: 0;
+                }
         }
     }
 
@@ -289,17 +388,30 @@
         margin-top: 28rem;
         text-align: center;
 
+        @media #{$breakpoint-xs} {
+            padding: 7rem 0;
+            margin-top: 6rem;
+        }
+
         .img-1{
             width: 70%;
             position: absolute;
             margin-top: -27rem;
             margin-left: -17rem;
+            @media #{$breakpoint-xs} {
+                width: 94%;
+                margin-top: -12rem;
+                margin-left: -3rem;
+            }
         }
 
         .img-2{
             width: 35%;
             position: relative;
             margin-bottom: -4rem;
+            @media #{$breakpoint-xs} {
+                width: 70%;
+            }
         }
     }
     &.end{
@@ -309,6 +421,10 @@
         align-items: center;
         justify-content: center;
         padding: 2rem 8rem 3rem 8rem;
+
+        @media #{$breakpoint-xs} {
+            display: none;
+        }
 
         .img-1{
             width: 40%;
@@ -330,6 +446,14 @@
 .contendor-img{
     user-select: none; 
     display: inline-flex;
+    width: 100%;
+    padding: 0 101px;
+    justify-content: center;
+
+    @media #{$breakpoint-xs} {
+        display: block;
+        padding: 0;
+    }
 
     .cont-img {
         padding: 0;
@@ -339,12 +463,26 @@
 
         &.a{
             width: 32.5%;
+            @media #{$breakpoint-xs} {
+                width: 97%;
+                margin-bottom: 11px;
+                margin: auto;
+            }
         }
         &.b{
-            width: 26.6%; 
+            width: 26.6%;
+            @media #{$breakpoint-xs} {
+                display: none;
+            }
+
         }
         &.c{
             width: 33.5%;
+            @media #{$breakpoint-xs} {
+                width: 97%;
+                margin: auto;
+            }
+
         }
     }
 
@@ -390,7 +528,7 @@
     padding: 2rem 0 2rem 0;
 
     @media #{$breakpoint-xs} {
-        padding: 2rem;
+        padding:2rem 0;
     }
 
 
@@ -408,7 +546,7 @@
 		margin-left: auto;
 		margin-right: auto;
         @media #{$breakpoint-xs} {
-        width: 90%;
+        width: 81%;
         }
     }
 
@@ -724,7 +862,7 @@
     	display: inline-flex;
 
         @media #{$breakpoint-xs} {
-            margin-left: -2rem;
+            margin-left: 0;
         }
 
     	&.a{
@@ -740,14 +878,17 @@
     		padding: 3rem 0 3rem 1rem;
 
             @media #{$breakpoint-xs} {
-                padding: 3rem 0 3rem 1rem;
+                padding: 2.5rem 0 3rem 1rem;
+                height: 7rem;
+                width: 7rem;
             }
+
     		h3{
     			color: #fff;
     			font-size: 13px;
    				margin-bottom: 10px;
                 @media #{$breakpoint-xs} {
-                    font-size: 15px;
+                    font-size: 13px;
                 }
 
    				&.color{

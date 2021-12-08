@@ -710,7 +710,8 @@
         margin-right: auto;
         margin-top: 5rem;
         @media #{$breakpoint-xs} {
-        width: 90%;
+                width: 120%;
+                margin-left: -2rem;
         }
     }
     
@@ -934,7 +935,8 @@
         margin-right: auto;
         margin-top: 5rem;
         @media #{$breakpoint-xs} {
-        width: 90%;
+                width: 120%;
+                margin-left: -2rem;
         }
     }
         
@@ -975,7 +977,8 @@
 
 
                 @media #{$breakpoint-xs} {
-                    left: 1rem;
+                    left: 5px;
+                    width: 81px;
                 }
 
             }
@@ -1156,7 +1159,8 @@
         margin-right: auto;
         margin-top: 5rem;
         @media #{$breakpoint-xs} {
-        width: 90%;
+                width: 120%;
+                margin-left: -2rem;
         }
     }
     

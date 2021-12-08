@@ -12,7 +12,7 @@
     &.normal{
         padding: 5rem 0 5rem 0;
         @media #{$breakpoint-xs} {
-            padding: 3rem 1rem 6rem 1rem;
+            padding: 3rem 1rem;
         }
     }
 
@@ -53,8 +53,9 @@
 
     .logo-letter{
         margin-left: -3rem;
-        width: 60%;
+        width: 63%;
         user-select: none;
+        filter: saturate(0);
         
         @media #{$breakpoint-xs} {
             margin-left: 0;
