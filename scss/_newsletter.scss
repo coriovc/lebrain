@@ -111,7 +111,7 @@
     }
 
     .container{
-        padding: 0 3rem;
+        padding: 0;
         .sec-1{
             padding: 0 2.5rem;
         }
@@ -139,6 +139,48 @@
         width: 100%;
         transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 
+
+        &.a1{
+            border-right: transparent;
+            border-bottom: transparent;
+            @media #{$breakpoint-xs} {
+                border-right: 1px solid rgba(0,0,0,.125);
+                border-bottom: transparent;
+            }
+        }
+        &.a2{
+            border-right: transparent;
+            border-bottom: transparent;
+            @media #{$breakpoint-xs} {
+                border-right: 1px solid rgba(0,0,0,.125);
+                border-bottom: transparent;
+            }
+        }
+        &.a3{
+            border-bottom: transparent;
+            @media #{$breakpoint-xs} {
+                border-right: 1px solid rgba(0,0,0,.125);
+                border-bottom: transparent;
+            }
+        }
+
+        &.b1{
+            border-right: transparent;
+            @media #{$breakpoint-xs} {
+                border-right: 1px solid rgba(0,0,0,.125);
+                border-bottom: transparent;
+            }
+        }
+        &.b2{
+            border-right: transparent;
+            @media #{$breakpoint-xs} {
+                border-right: 1px solid rgba(0,0,0,.125);
+                border-bottom: transparent;
+            }
+        }
+        &.b3{
+        }
+
         .card-body{
             padding: 2rem 0 2rem 3rem;
             @media #{$breakpoint-xs} {
@@ -150,6 +192,9 @@
                 font-size: 26px;
                 margin-bottom: 1.5rem;
                 color: #121212;
+                margin-bottom: auto;
+                margin-top: auto;
+                padding: 2rem 0;
                 @media #{$breakpoint-xs} {      
                     font-size: 22px;
                 }

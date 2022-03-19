@@ -6,23 +6,27 @@ window.onload = function ()
 
     tl1.from('#PC1 blockquote', .5, {x: 200, opacity: 0});
     tl1.from('#PC1 span', 1, {width: 0}, '=-.5');
-    tl1.from('#PC1 .pcside', 1, {x: -200, opacity: 0,scale: 1.6, ease: Power4.easeInOut}, '=-1');
-    tl1.from('#PC1 .pcfront', 1, {x: 200, opacity: 0,scale: 1.6, ease: Power4.easeInOut}, '=-.7');
+    tl1.from('#PC1 .pcside', 1, {x: -200,y: -200, opacity: 0,scale: 1.6, ease: Power4.easeInOut}, '=-1');
+    tl1.from('#PC1 .pcfront', 1, {x: 200,y: -200, opacity: 0,scale: 1.6, ease: Power4.easeInOut}, '=-.7');
+
     
     const scene = new ScrollMagic.Scene(
         {
             triggerElement: '#PC1',
             triggerHook:    'onLeave',
             duration:       '100%',
+
         },
     )
+
     .setPin('#PC1')
     .setTween(tl1)
     .addTo(controller);
 
+
     function updatePercentage()
     {
-        //percent.innerHTML = (tl1.progress() *100 ).toFixed();
+        percent.innerHTML = (tl1.progress() *0 ).toFixed();
         tl1.progress();
         console.log(tl1.progress());
 
